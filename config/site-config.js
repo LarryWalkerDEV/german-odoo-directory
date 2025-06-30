@@ -3,7 +3,7 @@
 export const siteConfig = {
   // Site metadata
   siteName: 'Deutsche Odoo Experten',
-  siteUrl: 'https://deutsche-odoo-experten.de',
+  siteUrl: 'https://odoo-experten-deutschland.de',
   language: 'de',
   locale: 'de_DE',
   
