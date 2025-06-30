@@ -1,11 +1,19 @@
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 
-// Load environment variables
+// Load environment variables from .env file if it exists
 dotenv.config();
+
+// Log environment variables for debugging (without exposing keys)
+console.log('Environment check:');
+console.log('SUPABASE_URL:', process.env.SUPABASE_URL ? '✓ Set' : '✗ Missing');
+console.log('SUPABASE_ANON_KEY:', process.env.SUPABASE_ANON_KEY ? '✓ Set' : '✗ Missing');
 
 // Validate required environment variables
 if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) {
+  console.error('Environment variables missing!');
+  console.error('SUPABASE_URL:', process.env.SUPABASE_URL);
+  console.error('SUPABASE_ANON_KEY:', process.env.SUPABASE_ANON_KEY ? '[REDACTED]' : 'undefined');
   throw new Error('Missing required Supabase environment variables');
 }
 

@@ -15,7 +15,7 @@ spec:
       scope: BUILD_TIME
       type: GENERAL
     - key: SUPABASE_ANON_KEY
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNvYXFiemFhZG11anVld3hmaGVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1MzI2OTIsImV4cCI6MjA0NzEwODY5Mn0.KoLWgeMCSkHzbVmNMz3LBvmBdFQg7hQiPzFRHAa-FfA
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNvYXFiemFhZG11anVld3hmaGVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYyNTk1NDcsImV4cCI6MjA1MTgzNTU0N30.eTXQLmqk_HksJUrqhOgJHdAo4zQtxGojjdQtP8EF8ZE
       scope: BUILD_TIME
       type: GENERAL
     routes:

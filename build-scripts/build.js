@@ -11,20 +11,23 @@ async function build() {
   const startTime = Date.now();
   
   try {
-    // Test database connection
-    console.log('📡 Testing database connection...');
-    const isConnected = await testConnection();
-    if (!isConnected) {
-      throw new Error('Failed to connect to Supabase');
-    }
-    
-    // Setup directories and copy assets
-    console.log('\n🔧 Setting up build environment...');
+    // Setup directories and copy assets first
+    console.log('🔧 Setting up build environment...');
     await setup();
     
-    // Fetch data from Supabase
-    console.log('\n📥 Fetching data from database...');
-    await fetchAllData();
+    // Test database connection
+    console.log('\n📡 Testing database connection...');
+    const isConnected = await testConnection();
+    
+    if (isConnected) {
+      // Fetch data from Supabase
+      console.log('\n📥 Fetching data from database...');
+      await fetchAllData();
+    } else {
+      console.log('\n⚠️  Supabase connection not available');
+      console.log('📝 Building with sample data...');
+      // The generateAllPages function will use sample data if no data is fetched
+    }
     
     // Generate all pages
     console.log('\n📝 Generating static pages...');
@@ -37,6 +40,7 @@ async function build() {
     
   } catch (error) {
     console.error('\n❌ Build failed:', error.message);
+    console.error(error.stack);
     process.exit(1);
   }
 }
