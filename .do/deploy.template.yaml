@@ -1,0 +1,23 @@
+spec:
+  name: german-odoo-directory
+  region: fra
+  static_sites:
+  - name: german-odoo-directory
+    github:
+      repo: LarryWalkerDEV/german-odoo-directory
+      branch: main
+      deploy_on_push: true
+    build_command: npm install && npm run build
+    output_dir: dist
+    envs:
+    - key: SUPABASE_URL
+      value: https://coaqbzaadmujuewxfhel.supabase.co
+      scope: BUILD_TIME
+      type: GENERAL
+    - key: SUPABASE_ANON_KEY
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNvYXFiemFhZG11anVld3hmaGVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1MzI2OTIsImV4cCI6MjA0NzEwODY5Mn0.KoLWgeMCSkHzbVmNMz3LBvmBdFQg7hQiPzFRHAa-FfA
+      scope: BUILD_TIME
+      type: GENERAL
+    routes:
+    - path: /
+    error_document: index.html
