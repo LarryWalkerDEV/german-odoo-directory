@@ -17,4 +17,6 @@ static_sites:
     value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNvYXFiemFhZG11anVld3hmaGVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1MzI2OTIsImV4cCI6MjA0NzEwODY5Mn0.KoLWgeMCSkHzbVmNMz3LBvmBdFQg7hQiPzFRHAa-FfA
     scope: BUILD_TIME
     type: GENERAL
-EOF < /dev/null
+  routes:
+  - path: /
+  error_document: index.html
