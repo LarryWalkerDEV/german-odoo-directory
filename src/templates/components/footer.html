@@ -1,0 +1,129 @@
+<footer class="od-footer" role="contentinfo">
+    <div class="od-footer__main">
+        <div class="od-container">
+            <div class="od-footer__grid">
+                <!-- Company Info -->
+                <div class="od-footer__section od-footer__section--company">
+                    <div class="od-footer__logo">
+                        <svg class="od-logo od-logo--footer" width="140" height="32" viewBox="0 0 140 32" aria-hidden="true">
+                            <g fill="var(--od-gray-100)">
+                                <circle cx="16" cy="16" r="14" opacity="0.3"/>
+                                <circle cx="16" cy="16" r="9" opacity="0.5"/>
+                                <circle cx="16" cy="16" r="5"/>
+                            </g>
+                            <text x="40" y="21" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="var(--od-gray-100)">
+                                Deutsche Odoo
+                            </text>
+                        </svg>
+                    </div>
+                    <p class="od-footer__description">
+                        Ihr vertrauenswürdiges Verzeichnis für zertifizierte Odoo Partner in Deutschland. 
+                        Finden Sie den perfekten Partner für Ihre digitale Transformation.
+                    </p>
+                    <div class="od-footer__badges">
+                        <img src="/assets/images/tuv-badge.svg" alt="TÜV geprüft" class="od-footer__badge" width="60" height="60">
+                        <img src="/assets/images/dsgvo-badge.svg" alt="DSGVO konform" class="od-footer__badge" width="60" height="60">
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="od-footer__section">
+                    <h3 class="od-footer__title">Schnellzugriff</h3>
+                    <ul class="od-footer__links">
+                        <li><a href="/partner" class="od-footer__link">Partner finden</a></li>
+                        <li><a href="/leistungen" class="od-footer__link">Leistungen</a></li>
+                        <li><a href="/blog" class="od-footer__link">Blog & Ratgeber</a></li>
+                        <li><a href="/preise" class="od-footer__link">Preise</a></li>
+                        <li><a href="/faq" class="od-footer__link">Häufige Fragen</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="od-footer__section">
+                    <h3 class="od-footer__title">Leistungen</h3>
+                    <ul class="od-footer__links">
+                        <li><a href="/leistungen/erp-implementierung" class="od-footer__link">ERP Implementierung</a></li>
+                        <li><a href="/leistungen/odoo-hosting" class="od-footer__link">Odoo Hosting</a></li>
+                        <li><a href="/leistungen/dsgvo-compliance" class="od-footer__link">DSGVO Compliance</a></li>
+                        <li><a href="/leistungen/support-wartung" class="od-footer__link">Support & Wartung</a></li>
+                        <li><a href="/leistungen/schulungen" class="od-footer__link">Schulungen</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact & Newsletter -->
+                <div class="od-footer__section od-footer__section--contact">
+                    <h3 class="od-footer__title">Kontakt & Updates</h3>
+                    <div class="od-footer__contact">
+                        <a href="tel:+498001234567" class="od-footer__contact-item">
+                            <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                                <path fill="currentColor" d="M15.5 12.5l-3-2c-.5-.3-1.2-.2-1.6.3l-1.2 1.5c-2.2-.8-4-2.6-4.8-4.8l1.5-1.2c.5-.4.6-1.1.3-1.6l-2-3c-.4-.5-1-.7-1.6-.4L.6 2.6c-.4.2-.6.6-.6 1C0 10.5 5.5 16 12.4 16c.4 0 .8-.2 1-.6l1.3-2.5c.3-.6.1-1.2-.4-1.6z"/>
+                            </svg>
+                            0800 123 4567
+                        </a>
+                        <a href="mailto:info@deutsche-odoo-experten.de" class="od-footer__contact-item">
+                            <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                                <path fill="currentColor" d="M14 2H2c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v.5L8 8 2 4.5V4h12zM2 12V7l6 3.5L14 7v5H2z"/>
+                            </svg>
+                            info@deutsche-odoo-experten.de
+                        </a>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="od-footer__newsletter">
+                        <h4 class="od-footer__subtitle">Newsletter abonnieren</h4>
+                        <form class="od-newsletter-form" action="/newsletter/subscribe" method="POST">
+                            <div class="od-newsletter-form__group">
+                                <label for="newsletter-email" class="od-sr-only">E-Mail-Adresse</label>
+                                <input 
+                                    type="email" 
+                                    id="newsletter-email" 
+                                    name="email" 
+                                    class="od-newsletter-form__input" 
+                                    placeholder="Ihre E-Mail-Adresse" 
+                                    required
+                                    aria-describedby="newsletter-privacy"
+                                >
+                                <button type="submit" class="od-btn od-btn--primary od-btn--sm">
+                                    Anmelden
+                                </button>
+                            </div>
+                            <p id="newsletter-privacy" class="od-newsletter-form__privacy">
+                                Mit der Anmeldung stimmen Sie unserer 
+                                <a href="/datenschutz" class="od-internal-link">Datenschutzerklärung</a> zu.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="od-footer__bottom">
+        <div class="od-container">
+            <div class="od-footer__bottom-content">
+                <div class="od-footer__copyright">
+                    &copy; 2024 Deutsche Odoo Experten. Alle Rechte vorbehalten.
+                </div>
+                <nav class="od-footer__legal" aria-label="Rechtliche Links">
+                    <a href="/impressum" class="od-footer__legal-link">Impressum</a>
+                    <a href="/datenschutz" class="od-footer__legal-link">Datenschutz</a>
+                    <a href="/agb" class="od-footer__legal-link">AGB</a>
+                    <a href="/cookie-richtlinie" class="od-footer__legal-link">Cookie-Richtlinie</a>
+                </nav>
+                <div class="od-footer__social">
+                    <a href="https://linkedin.com/company/deutsche-odoo-experten" class="od-footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg class="od-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="currentColor" d="M17.5 0h-15C1.1 0 0 1.1 0 2.5v15C0 18.9 1.1 20 2.5 20h15c1.4 0 2.5-1.1 2.5-2.5v-15C20 1.1 18.9 0 17.5 0zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.7-.8-1.7-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8c0 1-.8 1.8-1.9 1.8zM17 17h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V17h-3V8h2.9v1.3h0c.4-.7 1.4-1.5 2.8-1.5 3 0 3.6 2 3.6 4.5V17z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/deutscheodoo" class="od-footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                        <svg class="od-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="currentColor" d="M18.9 4.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.7.4-1.5.7-2.4.9-.7-.7-1.7-1.2-2.8-1.2-2.1 0-3.8 1.7-3.8 3.8 0 .3 0 .6.1.9-3.2-.2-6-1.7-7.9-4-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.1-.6 0-1.2-.2-1.7-.5v.1c0 1.8 1.3 3.4 3 3.7-.3.1-.6.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.9 2.6 3.5 2.6-1.3 1-2.9 1.6-4.7 1.6-.3 0-.6 0-.9-.1 1.7 1.1 3.6 1.7 5.8 1.7 6.9 0 10.7-5.7 10.7-10.7v-.5c.8-.5 1.4-1.2 1.9-1.9z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

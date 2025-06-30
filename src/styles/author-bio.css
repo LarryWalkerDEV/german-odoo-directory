@@ -1,0 +1,629 @@
+/* Author Bio Styles - Professional German B2B Design */
+
+/* Main Container */
+.author-bio-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin: 24px 0;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.author-bio-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #005AAA 0%, #0077BE 50%, #00A651 100%);
+}
+
+/* Header Section */
+.author-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.author-headshot {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.headshot-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f3f4f6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.headshot-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #10b981;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}
+
+.verified-icon {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Basic Info */
+.author-basic-info {
+  flex: 1;
+}
+
+.author-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.author-title {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0 0 4px 0;
+}
+
+.author-company {
+  font-size: 16px;
+  color: #005AAA;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.author-languages {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.language-badge {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Experience Counters */
+.experience-counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.counter-item {
+  text-align: center;
+}
+
+.counter-value {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #005AAA;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.counter-label {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.rating-stars {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.stars {
+  background: linear-gradient(90deg, #FFD700 80%, #E0E0E0 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Certifications Section */
+.certifications-section {
+  margin-bottom: 32px;
+}
+
+.certifications-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.certification-badge {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certification-badge:hover {
+  border-color: #005AAA;
+  box-shadow: 0 4px 12px rgba(0, 90, 170, 0.15);
+  transform: translateY(-2px);
+}
+
+.cert-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cert-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-icon {
+  flex-shrink: 0;
+}
+
+.cert-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.cert-details {
+  flex: 1;
+}
+
+.cert-name {
+  display: block;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.cert-issuer {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.cert-year {
+  display: inline-block;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-left: 8px;
+}
+
+.verify-link {
+  color: #005AAA;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Expertise Areas */
+.expertise-areas {
+  margin-bottom: 24px;
+}
+
+.expertise-areas h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.expertise-tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.expertise-tag:hover {
+  background: #0369a1;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.expertise-icon {
+  font-size: 10px;
+}
+
+/* Education Section */
+.education-section {
+  margin-bottom: 24px;
+}
+
+.education-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+}
+
+.education-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.education-item:last-child {
+  border-bottom: none;
+}
+
+.degree {
+  font-weight: 600;
+  color: #1f2937;
+  margin-right: 8px;
+}
+
+.university {
+  color: #6b7280;
+  margin-right: 8px;
+}
+
+.year {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.field {
+  display: block;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Bio Text */
+.author-bio-text {
+  margin: 24px 0;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #005AAA;
+}
+
+.author-bio-text p {
+  margin: 0;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Contact Section */
+.author-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.contact-options {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+.email-btn:hover {
+  border-color: #005AAA;
+  color: #005AAA;
+}
+
+.phone-btn:hover {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Social Profiles */
+.social-profiles {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-link.linkedin {
+  fill: #0077B5;
+}
+
+.social-link.linkedin:hover {
+  background: #0077B5;
+  fill: #ffffff;
+}
+
+.social-link.xing {
+  fill: #006567;
+}
+
+.social-link.xing:hover {
+  background: #006567;
+  fill: #ffffff;
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Trust Badges Mini */
+.trust-badges-mini {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f0fdf4;
+  color: #15803d;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Contact Modal */
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  margin: 0 0 16px 0;
+  color: #1f2937;
+}
+
+.phone-number {
+  font-size: 24px;
+  font-weight: 600;
+  color: #005AAA;
+  margin: 16px 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.privacy-notice {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+.close-modal {
+  width: 100%;
+  padding: 12px;
+  background: #005AAA;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.close-modal:hover {
+  background: #004488;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .author-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .headshot-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .author-languages {
+    justify-content: center;
+  }
+  
+  .experience-counters {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .counter-value {
+    font-size: 28px;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .author-contact {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .contact-options {
+    flex-direction: column;
+  }
+  
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .social-profiles {
+    justify-content: center;
+  }
+  
+  .trust-badges-mini {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .author-bio-card {
+    padding: 20px;
+  }
+  
+  .author-name {
+    font-size: 24px;
+  }
+  
+  .author-title {
+    font-size: 16px;
+  }
+  
+  .experience-counters {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Lazy Loading */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img.lazy:not(.lazy) {
+  opacity: 1;
+}
+
+/* Print Styles */
+@media print {
+  .contact-btn,
+  .social-profiles,
+  .verify-link {
+    display: none;
+  }
+  
+  .author-bio-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}

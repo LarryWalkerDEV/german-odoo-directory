@@ -1,0 +1,129 @@
+<header class="pro-header" role="banner">
+    <div class="pro-header__container">
+        <div class="pro-header__inner">
+            <!-- Logo -->
+            <a href="/" class="pro-header__logo" aria-label="Deutsche Odoo Experten - Startseite">
+                <svg class="pro-header__logo-svg" width="140" height="24" viewBox="0 0 140 24" aria-hidden="true">
+                    <g fill="#714B67">
+                        <circle cx="12" cy="12" r="10" opacity="0.2"/>
+                        <circle cx="12" cy="12" r="7" opacity="0.4"/>
+                        <circle cx="12" cy="12" r="4"/>
+                    </g>
+                    <text x="32" y="17" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#714B67">
+                        Odoo
+                    </text>
+                    <text x="68" y="17" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#1a1a1a">
+                        Experten
+                    </text>
+                </svg>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="pro-header__nav" role="navigation" aria-label="Hauptnavigation">
+                <ul class="pro-header__nav-list">
+                    <li class="pro-header__nav-item">
+                        <a href="/partner" class="pro-header__nav-link <!-- INJECT: nav.activePartner -->">
+                            Partner finden
+                        </a>
+                    </li>
+                    <li class="pro-header__nav-item pro-header__nav-item--dropdown">
+                        <button class="pro-header__nav-link pro-header__dropdown-toggle" aria-expanded="false" aria-controls="services-dropdown">
+                            Leistungen
+                            <svg class="pro-header__dropdown-icon" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+                                <path fill="currentColor" d="M5 6L0 0h10z"/>
+                            </svg>
+                        </button>
+                        <div class="pro-header__dropdown" id="services-dropdown">
+                            <ul class="pro-header__dropdown-list">
+                                <li class="pro-header__dropdown-item">
+                                    <a href="/leistungen/erp-implementierung" class="pro-header__dropdown-link">
+                                        <span class="pro-header__dropdown-title">ERP Implementierung</span>
+                                        <span class="pro-header__dropdown-desc">Professionelle Einführung</span>
+                                    </a>
+                                </li>
+                                <li class="pro-header__dropdown-item">
+                                    <a href="/leistungen/odoo-hosting" class="pro-header__dropdown-link">
+                                        <span class="pro-header__dropdown-title">Odoo Hosting</span>
+                                        <span class="pro-header__dropdown-desc">Sichere Cloud-Lösungen</span>
+                                    </a>
+                                </li>
+                                <li class="pro-header__dropdown-item">
+                                    <a href="/leistungen/dsgvo-compliance" class="pro-header__dropdown-link">
+                                        <span class="pro-header__dropdown-title">DSGVO Compliance</span>
+                                        <span class="pro-header__dropdown-desc">Rechtssicher in Deutschland</span>
+                                    </a>
+                                </li>
+                                <li class="pro-header__dropdown-item">
+                                    <a href="/leistungen/support-wartung" class="pro-header__dropdown-link">
+                                        <span class="pro-header__dropdown-title">Support & Wartung</span>
+                                        <span class="pro-header__dropdown-desc">24/7 Betreuung</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pro-header__nav-item">
+                        <a href="/blog" class="pro-header__nav-link <!-- INJECT: nav.activeBlog -->">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="pro-header__nav-item">
+                        <a href="/ueber-uns" class="pro-header__nav-link <!-- INJECT: nav.activeAbout -->">
+                            Über uns
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- CTA Button -->
+            <div class="pro-header__cta">
+                <a href="/kontakt" class="pro-header__cta-button">
+                    Beratung anfordern
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="pro-header__mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                <span class="pro-header__mobile-toggle-line"></span>
+                <span class="pro-header__mobile-toggle-line"></span>
+                <span class="pro-header__mobile-toggle-line"></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="pro-header__mobile-menu" data-mobile-menu>
+        <div class="pro-header__mobile-menu-inner">
+            <nav class="pro-header__mobile-nav">
+                <ul class="pro-header__mobile-nav-list">
+                    <li class="pro-header__mobile-nav-item">
+                        <a href="/partner" class="pro-header__mobile-nav-link">Partner finden</a>
+                    </li>
+                    <li class="pro-header__mobile-nav-item">
+                        <button class="pro-header__mobile-nav-link pro-header__mobile-dropdown-toggle" aria-expanded="false">
+                            Leistungen
+                            <svg class="pro-header__mobile-dropdown-icon" width="10" height="6" viewBox="0 0 10 6">
+                                <path fill="currentColor" d="M5 6L0 0h10z"/>
+                            </svg>
+                        </button>
+                        <ul class="pro-header__mobile-dropdown">
+                            <li><a href="/leistungen/erp-implementierung" class="pro-header__mobile-dropdown-link">ERP Implementierung</a></li>
+                            <li><a href="/leistungen/odoo-hosting" class="pro-header__mobile-dropdown-link">Odoo Hosting</a></li>
+                            <li><a href="/leistungen/dsgvo-compliance" class="pro-header__mobile-dropdown-link">DSGVO Compliance</a></li>
+                            <li><a href="/leistungen/support-wartung" class="pro-header__mobile-dropdown-link">Support & Wartung</a></li>
+                        </ul>
+                    </li>
+                    <li class="pro-header__mobile-nav-item">
+                        <a href="/blog" class="pro-header__mobile-nav-link">Blog</a>
+                    </li>
+                    <li class="pro-header__mobile-nav-item">
+                        <a href="/ueber-uns" class="pro-header__mobile-nav-link">Über uns</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="pro-header__mobile-cta">
+                <a href="/kontakt" class="pro-header__mobile-cta-button">Beratung anfordern</a>
+            </div>
+        </div>
+    </div>
+</header>

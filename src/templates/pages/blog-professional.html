@@ -1,0 +1,211 @@
+<!-- Blog Hero Section -->
+<section class="pro-blog-hero">
+    <div class="pro-blog-hero__container">
+        <div class="pro-blog-hero__content">
+            <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+                <ol class="pro-breadcrumb__list">
+                    <li class="pro-breadcrumb__item">
+                        <a href="/" class="pro-breadcrumb__link">Startseite</a>
+                    </li>
+                    <li class="pro-breadcrumb__item pro-breadcrumb__item--active" aria-current="page">
+                        Blog
+                    </li>
+                </ol>
+            </nav>
+            
+            <h1 class="pro-blog-hero__title">Blog & Ratgeber</h1>
+            <p class="pro-blog-hero__subtitle">
+                Expertenwissen und Best Practices rund um Odoo ERP
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="pro-blog-hero__search">
+                <form class="pro-search-form" action="/blog/search" method="GET">
+                    <label for="blog-search" class="pro-sr-only">Artikel durchsuchen</label>
+                    <div class="pro-search-form__wrapper">
+                        <svg class="pro-search-form__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="currentColor" d="M19.7 18.3l-5.4-5.4C15.4 11.5 16 9.8 16 8c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.7l5.4 5.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM2 8c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                        </svg>
+                        <input 
+                            type="search" 
+                            id="blog-search" 
+                            name="q" 
+                            class="pro-search-form__input" 
+                            placeholder="Suchen Sie nach Themen, Kategorien oder Autoren..."
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="pro-search-form__button">
+                            Suchen
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Content -->
+<section class="pro-blog-content">
+    <div class="pro-blog-content__container">
+        <div class="pro-blog-content__layout">
+            <!-- Main Content -->
+            <div class="pro-blog-content__main">
+                <!-- Filter Bar -->
+                <div class="pro-filter-bar">
+                    <div class="pro-filter-bar__left">
+                        <span class="pro-filter-bar__count">
+                            <strong><!-- INJECT: articlesCount --></strong> Artikel gefunden
+                        </span>
+                    </div>
+                    <div class="pro-filter-bar__right">
+                        <label for="sort-select" class="pro-sr-only">Sortierung</label>
+                        <select id="sort-select" class="pro-filter-bar__select" data-sort>
+                            <option value="newest">Neueste zuerst</option>
+                            <option value="oldest">Älteste zuerst</option>
+                            <option value="popular">Beliebteste</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Articles Grid -->
+                <div class="pro-blog-grid" data-blog-grid>
+                    <!-- INJECT: blogArticles -->
+                    <!-- Blog cards will be injected here -->
+                </div>
+                
+                <!-- Load More -->
+                <div class="pro-blog-load-more">
+                    <button class="pro-blog-load-more__button" data-load-more>
+                        Weitere Artikel laden
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="pro-blog-sidebar">
+                <!-- Categories -->
+                <div class="pro-sidebar-widget">
+                    <h3 class="pro-sidebar-widget__title">Kategorien</h3>
+                    <ul class="pro-category-list">
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/implementierung" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Implementierung</span>
+                                <span class="pro-category-list__count">24</span>
+                            </a>
+                        </li>
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/best-practices" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Best Practices</span>
+                                <span class="pro-category-list__count">18</span>
+                            </a>
+                        </li>
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/updates" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Updates & News</span>
+                                <span class="pro-category-list__count">32</span>
+                            </a>
+                        </li>
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/tutorials" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Tutorials</span>
+                                <span class="pro-category-list__count">15</span>
+                            </a>
+                        </li>
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/case-studies" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Case Studies</span>
+                                <span class="pro-category-list__count">12</span>
+                            </a>
+                        </li>
+                        <li class="pro-category-list__item">
+                            <a href="/blog/kategorie/compliance" class="pro-category-list__link">
+                                <span class="pro-category-list__name">Compliance & Recht</span>
+                                <span class="pro-category-list__count">8</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Posts -->
+                <div class="pro-sidebar-widget">
+                    <h3 class="pro-sidebar-widget__title">Beliebte Artikel</h3>
+                    <ul class="pro-popular-posts">
+                        <!-- INJECT: popularPosts -->
+                        <li class="pro-popular-post">
+                            <a href="#" class="pro-popular-post__link">
+                                <span class="pro-popular-post__number">01</span>
+                                <div class="pro-popular-post__content">
+                                    <h4 class="pro-popular-post__title">
+                                        Die 10 wichtigsten Schritte für eine erfolgreiche Odoo-Implementierung
+                                    </h4>
+                                    <span class="pro-popular-post__meta">15. März 2024</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-popular-post">
+                            <a href="#" class="pro-popular-post__link">
+                                <span class="pro-popular-post__number">02</span>
+                                <div class="pro-popular-post__content">
+                                    <h4 class="pro-popular-post__title">
+                                        DSGVO-Compliance mit Odoo: Ein Leitfaden
+                                    </h4>
+                                    <span class="pro-popular-post__meta">12. März 2024</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-popular-post">
+                            <a href="#" class="pro-popular-post__link">
+                                <span class="pro-popular-post__number">03</span>
+                                <div class="pro-popular-post__content">
+                                    <h4 class="pro-popular-post__title">
+                                        Odoo vs. SAP: Der große Vergleich
+                                    </h4>
+                                    <span class="pro-popular-post__meta">8. März 2024</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter CTA -->
+                <div class="pro-sidebar-widget pro-sidebar-widget--cta">
+                    <div class="pro-sidebar-cta">
+                        <h3 class="pro-sidebar-cta__title">Newsletter</h3>
+                        <p class="pro-sidebar-cta__desc">
+                            Wöchentliche Tipps und Updates direkt in Ihr Postfach.
+                        </p>
+                        <form class="pro-sidebar-cta__form" action="/newsletter/subscribe" method="POST">
+                            <label for="sidebar-newsletter-email" class="pro-sr-only">E-Mail-Adresse</label>
+                            <input 
+                                type="email" 
+                                id="sidebar-newsletter-email" 
+                                name="email" 
+                                class="pro-sidebar-cta__input" 
+                                placeholder="Ihre E-Mail" 
+                                required
+                            >
+                            <button type="submit" class="pro-sidebar-cta__button">
+                                Jetzt anmelden
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Tags -->
+                <div class="pro-sidebar-widget">
+                    <h3 class="pro-sidebar-widget__title">Schlagwörter</h3>
+                    <div class="pro-tag-cloud">
+                        <a href="/blog/tag/odoo-17" class="pro-tag">Odoo 17</a>
+                        <a href="/blog/tag/erp" class="pro-tag">ERP</a>
+                        <a href="/blog/tag/hosting" class="pro-tag">Hosting</a>
+                        <a href="/blog/tag/migration" class="pro-tag">Migration</a>
+                        <a href="/blog/tag/dsgvo" class="pro-tag">DSGVO</a>
+                        <a href="/blog/tag/cloud" class="pro-tag">Cloud</a>
+                        <a href="/blog/tag/buchhaltung" class="pro-tag">Buchhaltung</a>
+                        <a href="/blog/tag/crm" class="pro-tag">CRM</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>

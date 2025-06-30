@@ -1,0 +1,253 @@
+<!-- Hero Section -->
+<section class="od-hero">
+    <div class="od-container">
+        <div class="od-hero__content">
+            <h1 class="od-hero__title">
+                Finden Sie den perfekten
+                <span class="od-hero__highlight">Odoo Partner</span>
+                für Ihr Unternehmen
+            </h1>
+            <p class="od-hero__subtitle">
+                Deutschlands führendes Verzeichnis für zertifizierte Odoo Experten. 
+                Von ERP-Implementierung bis DSGVO-Compliance – wir verbinden Sie mit den besten Partnern.
+            </p>
+            
+            <!-- Search Form -->
+            <form class="od-hero__search" action="/partner/suche" method="GET">
+                <div class="od-search-form">
+                    <div class="od-search-form__group">
+                        <label for="hero-service" class="od-sr-only">Leistung auswählen</label>
+                        <select id="hero-service" name="service" class="od-search-form__select">
+                            <option value="">Alle Leistungen</option>
+                            <option value="erp-implementation">ERP Implementierung</option>
+                            <option value="odoo-hosting">Odoo Hosting</option>
+                            <option value="dsgvo-compliance">DSGVO Compliance</option>
+                            <option value="support-maintenance">Support & Wartung</option>
+                            <option value="custom-development">Individuelle Entwicklung</option>
+                        </select>
+                    </div>
+                    <div class="od-search-form__group">
+                        <label for="hero-location" class="od-sr-only">Standort eingeben</label>
+                        <input 
+                            type="text" 
+                            id="hero-location" 
+                            name="location" 
+                            class="od-search-form__input" 
+                            placeholder="Stadt oder PLZ"
+                        >
+                    </div>
+                    <button type="submit" class="od-btn od-btn--primary od-btn--lg">
+                        <svg class="od-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M19.7 18.3l-5.4-5.4C15.4 11.5 16 9.8 16 8c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.7l5.4 5.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM2 8c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                        </svg>
+                        Partner finden
+                    </button>
+                </div>
+            </form>
+            
+            <!-- Trust Indicators -->
+            <div class="od-hero__trust">
+                <div class="od-hero__trust-item">
+                    <strong>150+</strong>
+                    <span>Geprüfte Partner</span>
+                </div>
+                <div class="od-hero__trust-item">
+                    <strong>100%</strong>
+                    <span>DSGVO-konform</span>
+                </div>
+                <div class="od-hero__trust-item">
+                    <strong>5.000+</strong>
+                    <span>Erfolgreiche Projekte</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Image/Graphic -->
+        <div class="od-hero__visual">
+            <div class="od-hero__graphic">
+                <!-- SVG Illustration -->
+                <svg viewBox="0 0 500 400" class="od-hero__svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--od-primary);stop-opacity:0.1" />
+                            <stop offset="100%" style="stop-color:var(--od-secondary);stop-opacity:0.2" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="50" width="400" height="300" rx="20" fill="url(#heroGradient)" />
+                    <circle cx="150" cy="150" r="40" fill="var(--od-primary)" opacity="0.2" />
+                    <circle cx="350" cy="250" r="60" fill="var(--od-secondary)" opacity="0.2" />
+                    <path d="M 100 200 Q 250 150 400 200" stroke="var(--od-accent)" stroke-width="3" fill="none" opacity="0.5" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="od-section od-services-overview">
+    <div class="od-container">
+        <div class="od-section__header">
+            <h2 class="od-section__title">Unsere Leistungsbereiche</h2>
+            <p class="od-section__subtitle">
+                Finden Sie spezialisierte Odoo Partner für jeden Bedarf
+            </p>
+        </div>
+        
+        <div class="od-services-grid">
+            <!-- Service Cards -->
+            <div class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                        <circle cx="24" cy="24" r="20" fill="var(--od-primary)" opacity="0.1"/>
+                        <path fill="var(--od-primary)" d="M24 8c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8zm0 28c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12zm6-12h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">ERP Implementierung</h3>
+                <p class="od-service-card__description">
+                    Professionelle Einführung und Anpassung von Odoo ERP-Systemen für Ihr Unternehmen
+                </p>
+                <a href="/leistungen/erp-implementierung" class="od-service-card__link">
+                    Mehr erfahren
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M4 2l4 4-4 4"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                        <rect x="8" y="12" width="32" height="24" rx="4" fill="var(--od-primary)" opacity="0.1"/>
+                        <path fill="var(--od-primary)" d="M36 12H12c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V16c0-2.2-1.8-4-4-4zM24 28c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Odoo Hosting</h3>
+                <p class="od-service-card__description">
+                    Sichere, schnelle und DSGVO-konforme Hosting-Lösungen in deutschen Rechenzentren
+                </p>
+                <a href="/leistungen/odoo-hosting" class="od-service-card__link">
+                    Mehr erfahren
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M4 2l4 4-4 4"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                        <path fill="var(--od-primary)" opacity="0.1" d="M24 4L8 14v10c0 10 6.8 19.6 16 22 9.2-2.4 16-12 16-22V14L24 4z"/>
+                        <path fill="var(--od-primary)" d="M24 4L8 14v10c0 10 6.8 19.6 16 22 9.2-2.4 16-12 16-22V14L24 4zm-4 26l-6-6 2.8-2.8L20 24.4l11.2-11.2L34 16 20 30z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">DSGVO Compliance</h3>
+                <p class="od-service-card__description">
+                    Rechtssichere Anpassung Ihrer Odoo-Installation an deutsche Datenschutzbestimmungen
+                </p>
+                <a href="/leistungen/dsgvo-compliance" class="od-service-card__link">
+                    Mehr erfahren
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M4 2l4 4-4 4"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div class="od-section__cta">
+            <a href="/leistungen" class="od-btn od-btn--secondary od-btn--lg">
+                Alle Leistungen ansehen
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Partners -->
+<section class="od-section od-section--gray od-featured-partners">
+    <div class="od-container">
+        <div class="od-section__header">
+            <h2 class="od-section__title">Premium Partner</h2>
+            <p class="od-section__subtitle">
+                Unsere Top-bewerteten Odoo Experten mit nachgewiesener Expertise
+            </p>
+        </div>
+        
+        <div class="od-partners-grid">
+            <!-- INJECT: featuredPartners -->
+            <!-- Partner cards will be injected here -->
+        </div>
+        
+        <div class="od-section__cta">
+            <a href="/partner" class="od-btn od-btn--primary od-btn--lg">
+                Alle Partner durchsuchen
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Blog Posts -->
+<section class="od-section od-recent-posts">
+    <div class="od-container">
+        <div class="od-section__header">
+            <h2 class="od-section__title">Aktuelle Artikel & Ratgeber</h2>
+            <p class="od-section__subtitle">
+                Expertenwissen rund um Odoo, ERP und digitale Transformation
+            </p>
+        </div>
+        
+        <div class="od-blog-grid od-blog-grid--3cols">
+            <!-- INJECT: recentPosts -->
+            <!-- Blog cards will be injected here -->
+        </div>
+        
+        <div class="od-section__cta">
+            <a href="/blog" class="od-btn od-btn--secondary od-btn--lg">
+                Zum Blog
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="od-section od-cta-section">
+    <div class="od-container">
+        <div class="od-cta">
+            <div class="od-cta__content">
+                <h2 class="od-cta__title">
+                    Werden Sie Teil unseres Partner-Netzwerks
+                </h2>
+                <p class="od-cta__description">
+                    Präsentieren Sie Ihre Odoo-Expertise einem breiten Publikum und 
+                    gewinnen Sie neue Kunden über unser Verzeichnis.
+                </p>
+                <div class="od-cta__features">
+                    <div class="od-cta__feature">
+                        <svg class="od-icon od-icon--check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm-1.2 15l-3.8-3.8 1.4-1.4 2.4 2.4 5.8-5.8 1.4 1.4L8.8 15z"/>
+                        </svg>
+                        <span>Qualifizierte Leads</span>
+                    </div>
+                    <div class="od-cta__feature">
+                        <svg class="od-icon od-icon--check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm-1.2 15l-3.8-3.8 1.4-1.4 2.4 2.4 5.8-5.8 1.4 1.4L8.8 15z"/>
+                        </svg>
+                        <span>Erhöhte Sichtbarkeit</span>
+                    </div>
+                    <div class="od-cta__feature">
+                        <svg class="od-icon od-icon--check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm-1.2 15l-3.8-3.8 1.4-1.4 2.4 2.4 5.8-5.8 1.4 1.4L8.8 15z"/>
+                        </svg>
+                        <span>Vertrauenssiegel</span>
+                    </div>
+                </div>
+                <div class="od-cta__actions">
+                    <a href="/partner-werden" class="od-btn od-btn--primary od-btn--lg">
+                        Jetzt Partner werden
+                    </a>
+                    <a href="/preise" class="od-btn od-btn--outline od-btn--lg">
+                        Preise ansehen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

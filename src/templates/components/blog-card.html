@@ -1,0 +1,60 @@
+<article class="od-blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+    <a href="<!-- INJECT: article.url -->" class="od-blog-card__link">
+        <!-- Featured Image -->
+        <div class="od-blog-card__image-wrapper">
+            <img 
+                src="<!-- INJECT: article.imageUrl -->" 
+                alt="<!-- INJECT: article.imageAlt -->" 
+                class="od-blog-card__image"
+                width="400"
+                height="225"
+                loading="lazy"
+                itemprop="image"
+            >
+            <div class="od-blog-card__category">
+                <!-- INJECT: article.category -->
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="od-blog-card__content">
+            <!-- Meta Information -->
+            <div class="od-blog-card__meta">
+                <time class="od-blog-card__date" datetime="<!-- INJECT: article.dateISO -->" itemprop="datePublished">
+                    <!-- INJECT: article.dateFormatted -->
+                </time>
+                <span class="od-blog-card__reading-time">
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14">
+                        <path fill="currentColor" d="M7 0C3.1 0 0 3.1 0 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 12c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm.5-5H4V6h2V3h1v4h.5v1z"/>
+                    </svg>
+                    <!-- INJECT: article.readingTime --> Min. Lesezeit
+                </span>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="od-blog-card__title" itemprop="headline">
+                <!-- INJECT: article.title -->
+            </h3>
+            
+            <!-- Excerpt -->
+            <p class="od-blog-card__excerpt" itemprop="description">
+                <!-- INJECT: article.excerpt -->
+            </p>
+            
+            <!-- Author -->
+            <div class="od-blog-card__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <img 
+                    src="<!-- INJECT: article.author.avatarUrl -->" 
+                    alt="<!-- INJECT: article.author.name -->" 
+                    class="od-blog-card__author-avatar"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                >
+                <span class="od-blog-card__author-name" itemprop="name">
+                    <!-- INJECT: article.author.name -->
+                </span>
+            </div>
+        </div>
+    </a>
+</article>

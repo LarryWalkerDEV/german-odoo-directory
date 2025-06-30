@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build output
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Progress tracking
+.image-generation-progress.json
+
+# Deployment packages
+deploy_*/
+deploy_*.tar.gz
+
+# Test files
+test-*.js
+test-*.html
+
+# Backup files
+*.backup
+*.bak
+
+# Local development
+.http-server/
+serve.json

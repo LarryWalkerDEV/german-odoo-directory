@@ -1,0 +1,564 @@
+/* German Odoo Directory - Animations & Interactions */
+
+/* ========================================================================
+   Keyframe Animations
+   ======================================================================== */
+
+@keyframes od-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes od-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes od-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes od-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes od-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes od-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes od-slide-in-bottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes od-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes od-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes od-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ========================================================================
+   Scroll Animations (Intersection Observer)
+   ======================================================================== */
+
+.od-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.od-animate.od-animate--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.od-animate--fade-up {
+  transform: translateY(50px);
+}
+
+.od-animate--fade-down {
+  transform: translateY(-50px);
+}
+
+.od-animate--fade-left {
+  transform: translateX(-50px);
+}
+
+.od-animate--fade-right {
+  transform: translateX(50px);
+}
+
+.od-animate--scale {
+  transform: scale(0.8);
+}
+
+.od-animate--delay-1 {
+  transition-delay: 0.1s;
+}
+
+.od-animate--delay-2 {
+  transition-delay: 0.2s;
+}
+
+.od-animate--delay-3 {
+  transition-delay: 0.3s;
+}
+
+.od-animate--delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* ========================================================================
+   Loading States
+   ======================================================================== */
+
+.od-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--od-space-16);
+  text-align: center;
+}
+
+.od-loading__spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--od-gray-200);
+  border-top-color: var(--od-primary);
+  border-radius: 50%;
+  animation: od-spin 1s linear infinite;
+  margin-bottom: var(--od-space-4);
+}
+
+.od-loading__text {
+  color: var(--od-gray-600);
+  font-size: var(--od-text-sm);
+}
+
+/* Skeleton Loading */
+.od-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--od-gray-200) 25%,
+    var(--od-gray-100) 50%,
+    var(--od-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: od-skeleton-loading 1.5s infinite;
+  border-radius: var(--od-radius-base);
+}
+
+@keyframes od-skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.od-skeleton--text {
+  height: 16px;
+  margin-bottom: var(--od-space-2);
+}
+
+.od-skeleton--title {
+  height: 24px;
+  width: 60%;
+  margin-bottom: var(--od-space-3);
+}
+
+.od-skeleton--image {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.od-skeleton--avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--od-radius-full);
+}
+
+/* ========================================================================
+   Hover Effects
+   ======================================================================== */
+
+/* Card Hover */
+.od-card-hover {
+  transition: all var(--od-transition-base);
+}
+
+.od-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--od-shadow-xl);
+}
+
+/* Image Hover */
+.od-image-hover {
+  overflow: hidden;
+  position: relative;
+}
+
+.od-image-hover img {
+  transition: transform var(--od-transition-slow);
+}
+
+.od-image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Link Underline Animation */
+.od-link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.od-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--od-primary);
+  transition: width var(--od-transition-fast);
+}
+
+.od-link-underline:hover::after {
+  width: 100%;
+}
+
+/* ========================================================================
+   Button Animations
+   ======================================================================== */
+
+.od-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--od-transition-fast);
+}
+
+.od-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.od-btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Button Hover Lift */
+.od-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--od-shadow-md);
+}
+
+.od-btn:active {
+  transform: translateY(0);
+  box-shadow: var(--od-shadow-sm);
+}
+
+/* ========================================================================
+   Form Interactions
+   ======================================================================== */
+
+.od-input-group {
+  position: relative;
+}
+
+.od-input-group__input {
+  transition: all var(--od-transition-fast);
+}
+
+.od-input-group__input:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(113, 75, 103, 0.15);
+}
+
+/* Floating Label */
+.od-floating-label {
+  position: relative;
+}
+
+.od-floating-label__input {
+  padding-top: var(--od-space-5);
+  padding-bottom: var(--od-space-2);
+}
+
+.od-floating-label__label {
+  position: absolute;
+  top: 50%;
+  left: var(--od-space-4);
+  transform: translateY(-50%);
+  transition: all var(--od-transition-fast);
+  pointer-events: none;
+  color: var(--od-gray-500);
+}
+
+.od-floating-label__input:focus + .od-floating-label__label,
+.od-floating-label__input:not(:placeholder-shown) + .od-floating-label__label {
+  top: var(--od-space-2);
+  transform: translateY(0);
+  font-size: var(--od-text-sm);
+  color: var(--od-primary);
+}
+
+/* ========================================================================
+   Counters Animation
+   ======================================================================== */
+
+.od-counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+.od-counter[data-count] {
+  animation: od-counter 2s ease-out forwards;
+}
+
+/* ========================================================================
+   Page Transitions
+   ======================================================================== */
+
+.od-page-transition {
+  animation: od-fade-in 0.5s ease-out;
+}
+
+/* ========================================================================
+   Accordion Animation
+   ======================================================================== */
+
+.od-accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--od-transition-base);
+}
+
+.od-accordion__item--open .od-accordion__content {
+  max-height: 1000px; /* Adjust based on content */
+}
+
+.od-accordion__icon {
+  transition: transform var(--od-transition-fast);
+}
+
+.od-accordion__item--open .od-accordion__icon {
+  transform: rotate(180deg);
+}
+
+/* ========================================================================
+   Modal Animations
+   ======================================================================== */
+
+.od-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: var(--od-z-modal);
+}
+
+.od-modal--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.od-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  animation: od-fade-in 0.3s ease-out;
+}
+
+.od-modal__content {
+  position: relative;
+  background: #fff;
+  border-radius: var(--od-radius-xl);
+  box-shadow: var(--od-shadow-xl);
+  max-width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+  animation: od-scale-in 0.3s ease-out;
+}
+
+/* ========================================================================
+   Toast Notifications
+   ======================================================================== */
+
+.od-toast {
+  position: fixed;
+  bottom: var(--od-space-4);
+  right: var(--od-space-4);
+  background: var(--od-gray-900);
+  color: #fff;
+  padding: var(--od-space-4) var(--od-space-6);
+  border-radius: var(--od-radius-lg);
+  box-shadow: var(--od-shadow-xl);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all var(--od-transition-base);
+  z-index: var(--od-z-tooltip);
+}
+
+.od-toast--show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.od-toast--success {
+  background: var(--od-accent);
+}
+
+.od-toast--error {
+  background: var(--od-error);
+}
+
+.od-toast--warning {
+  background: var(--od-warning);
+}
+
+/* ========================================================================
+   Tooltip Animation
+   ======================================================================== */
+
+.od-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.od-tooltip__content {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--od-gray-900);
+  color: #fff;
+  padding: var(--od-space-2) var(--od-space-3);
+  border-radius: var(--od-radius-base);
+  font-size: var(--od-text-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--od-transition-fast);
+  z-index: var(--od-z-tooltip);
+}
+
+.od-tooltip__content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--od-gray-900);
+}
+
+.od-tooltip:hover .od-tooltip__content {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* ========================================================================
+   Progress Bar Animation
+   ======================================================================== */
+
+.od-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--od-gray-200);
+  border-radius: var(--od-radius-full);
+  overflow: hidden;
+}
+
+.od-progress__bar {
+  height: 100%;
+  background: var(--od-primary);
+  border-radius: var(--od-radius-full);
+  transition: width var(--od-transition-slow);
+  position: relative;
+  overflow: hidden;
+}
+
+.od-progress__bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: od-progress-shine 2s linear infinite;
+}
+
+@keyframes od-progress-shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

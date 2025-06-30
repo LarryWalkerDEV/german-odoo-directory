@@ -1,0 +1,211 @@
+<!-- Blog Header -->
+<section class="od-page-header">
+    <div class="od-container">
+        <nav class="od-breadcrumb" aria-label="Breadcrumb">
+            <ol class="od-breadcrumb__list">
+                <li class="od-breadcrumb__item">
+                    <a href="/" class="od-breadcrumb__link">Startseite</a>
+                </li>
+                <li class="od-breadcrumb__item od-breadcrumb__item--active" aria-current="page">
+                    Blog
+                </li>
+            </ol>
+        </nav>
+        
+        <h1 class="od-page-header__title">Odoo Blog & Ratgeber</h1>
+        <p class="od-page-header__subtitle">
+            Expertenwissen, Best Practices und aktuelle Trends rund um Odoo ERP
+        </p>
+    </div>
+</section>
+
+<!-- Blog Filters -->
+<section class="od-blog-filters">
+    <div class="od-container">
+        <div class="od-filters">
+            <div class="od-filters__group">
+                <label for="blog-category" class="od-filters__label">Kategorie</label>
+                <select id="blog-category" class="od-filters__select" data-filter="category">
+                    <option value="">Alle Kategorien</option>
+                    <option value="implementation">Implementierung</option>
+                    <option value="best-practices">Best Practices</option>
+                    <option value="updates">Updates & News</option>
+                    <option value="tutorials">Tutorials</option>
+                    <option value="case-studies">Case Studies</option>
+                    <option value="compliance">Compliance & Recht</option>
+                </select>
+            </div>
+            
+            <div class="od-filters__group">
+                <label for="blog-author" class="od-filters__label">Autor</label>
+                <select id="blog-author" class="od-filters__select" data-filter="author">
+                    <option value="">Alle Autoren</option>
+                    <!-- INJECT: authorOptions -->
+                </select>
+            </div>
+            
+            <div class="od-filters__group">
+                <label for="blog-sort" class="od-filters__label">Sortierung</label>
+                <select id="blog-sort" class="od-filters__select" data-sort>
+                    <option value="newest">Neueste zuerst</option>
+                    <option value="oldest">Älteste zuerst</option>
+                    <option value="popular">Beliebteste</option>
+                </select>
+            </div>
+            
+            <div class="od-filters__search">
+                <label for="blog-search" class="od-sr-only">Artikel suchen</label>
+                <div class="od-search-input">
+                    <input 
+                        type="search" 
+                        id="blog-search" 
+                        class="od-search-input__field" 
+                        placeholder="Artikel durchsuchen..."
+                        data-search
+                    >
+                    <svg class="od-search-input__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M19.7 18.3l-5.4-5.4C15.4 11.5 16 9.8 16 8c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.7l5.4 5.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM2 8c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="od-filters__results">
+            <span class="od-filters__count">
+                <strong><!-- INJECT: articlesCount --></strong> Artikel gefunden
+            </span>
+            <button class="od-filters__reset" data-reset-filters>
+                Filter zurücksetzen
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Article -->
+<section class="od-featured-article">
+    <div class="od-container">
+        <!-- INJECT: featuredArticle -->
+        <article class="od-featured-card">
+            <div class="od-featured-card__image">
+                <img 
+                    src="/assets/images/blog/featured-placeholder.jpg" 
+                    alt="Featured article" 
+                    class="od-featured-card__img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                >
+                <div class="od-featured-card__badge">Empfohlen</div>
+            </div>
+            <div class="od-featured-card__content">
+                <div class="od-featured-card__meta">
+                    <span class="od-featured-card__category">Best Practices</span>
+                    <time class="od-featured-card__date">15. März 2024</time>
+                </div>
+                <h2 class="od-featured-card__title">
+                    <a href="#" class="od-featured-card__link">
+                        Die 10 wichtigsten Schritte für eine erfolgreiche Odoo-Implementierung
+                    </a>
+                </h2>
+                <p class="od-featured-card__excerpt">
+                    Erfahren Sie, wie Sie Ihr Odoo ERP-Projekt von Anfang an richtig aufsetzen und 
+                    typische Fallstricke vermeiden. Unsere Experten teilen ihre bewährten Methoden.
+                </p>
+                <div class="od-featured-card__author">
+                    <img src="/assets/images/authors/author-1.jpg" alt="Dr. Michael Schmidt" class="od-featured-card__author-avatar" width="40" height="40">
+                    <div class="od-featured-card__author-info">
+                        <span class="od-featured-card__author-name">Dr. Michael Schmidt</span>
+                        <span class="od-featured-card__author-title">Senior ERP Consultant</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Blog Grid -->
+<section class="od-blog-listing">
+    <div class="od-container">
+        <div class="od-blog-grid" data-blog-grid>
+            <!-- INJECT: blogArticles -->
+            <!-- Blog cards will be injected here -->
+        </div>
+        
+        <!-- Pagination -->
+        <nav class="od-pagination" aria-label="Blog-Seitennavigation">
+            <ul class="od-pagination__list">
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link od-pagination__link--prev" aria-label="Vorherige Seite">
+                        <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M10 2L4 8l6 6"/>
+                        </svg>
+                        Zurück
+                    </a>
+                </li>
+                
+                <!-- INJECT: paginationItems -->
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link od-pagination__link--active" aria-current="page">1</a>
+                </li>
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link">2</a>
+                </li>
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link">3</a>
+                </li>
+                <li class="od-pagination__item od-pagination__item--ellipsis">
+                    <span class="od-pagination__ellipsis">...</span>
+                </li>
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link">12</a>
+                </li>
+                
+                <li class="od-pagination__item">
+                    <a href="#" class="od-pagination__link od-pagination__link--next" aria-label="Nächste Seite">
+                        Weiter
+                        <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M6 2l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="od-section od-newsletter-cta">
+    <div class="od-container">
+        <div class="od-newsletter-box">
+            <div class="od-newsletter-box__content">
+                <h2 class="od-newsletter-box__title">
+                    Bleiben Sie auf dem Laufenden
+                </h2>
+                <p class="od-newsletter-box__description">
+                    Erhalten Sie wöchentlich die neuesten Odoo-Tipps, Updates und Best Practices 
+                    direkt in Ihr Postfach.
+                </p>
+            </div>
+            <form class="od-newsletter-box__form" action="/newsletter/subscribe" method="POST">
+                <div class="od-newsletter-box__input-group">
+                    <label for="newsletter-email-blog" class="od-sr-only">E-Mail-Adresse</label>
+                    <input 
+                        type="email" 
+                        id="newsletter-email-blog" 
+                        name="email" 
+                        class="od-newsletter-box__input" 
+                        placeholder="ihre@email.de" 
+                        required
+                    >
+                    <button type="submit" class="od-btn od-btn--primary">
+                        Newsletter abonnieren
+                    </button>
+                </div>
+                <p class="od-newsletter-box__privacy">
+                    Kein Spam. Jederzeit abbestellbar. 
+                    <a href="/datenschutz" class="od-internal-link">Datenschutz</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

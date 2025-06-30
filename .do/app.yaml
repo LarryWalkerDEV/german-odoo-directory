@@ -1,0 +1,11 @@
+name: german-odoo-directory
+region: fra
+services:
+- name: web
+  dockerfile_path: Dockerfile
+  source_dir: /
+  instance_size_slug: basic-xxs
+  instance_count: 1
+  http_port: 80
+  routes:
+  - path: /

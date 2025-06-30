@@ -1,0 +1,97 @@
+<article class="od-partner-card" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="od-partner-card__inner">
+        <!-- Partner Badge for Premium/Enterprise -->
+        <!-- INJECT: partner.badge -->
+        
+        <!-- Partner Header -->
+        <div class="od-partner-card__header">
+            <div class="od-partner-card__logo-wrapper">
+                <!-- INJECT: partner.logo -->
+                <img 
+                    src="<!-- INJECT: partner.logoUrl -->" 
+                    alt="<!-- INJECT: partner.name --> Logo" 
+                    class="od-partner-card__logo"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                    itemprop="logo"
+                >
+            </div>
+            <div class="od-partner-card__info">
+                <h3 class="od-partner-card__name" itemprop="name">
+                    <a href="<!-- INJECT: partner.url -->" class="od-partner-card__link">
+                        <!-- INJECT: partner.name -->
+                    </a>
+                </h3>
+                <div class="od-partner-card__location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14">
+                        <path fill="currentColor" d="M7 0C3.1 0 0 3.1 0 7c0 5.3 7 7 7 7s7-1.7 7-7c0-3.9-3.1-7-7-7zm0 10c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+                    </svg>
+                    <span itemprop="addressLocality"><!-- INJECT: partner.city --></span>,
+                    <span itemprop="addressRegion"><!-- INJECT: partner.state --></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partner Description -->
+        <p class="od-partner-card__description" itemprop="description">
+            <!-- INJECT: partner.description -->
+        </p>
+        
+        <!-- Specializations -->
+        <div class="od-partner-card__specializations">
+            <!-- INJECT: partner.specializations -->
+            <span class="od-tag od-tag--primary">ERP Implementierung</span>
+            <span class="od-tag od-tag--primary">DSGVO Compliance</span>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div class="od-partner-card__trust">
+            <div class="od-partner-card__trust-item">
+                <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm3-6H8V5H6v5h5V8z"/>
+                </svg>
+                <span class="od-partner-card__trust-label"><!-- INJECT: partner.experience --> Jahre Erfahrung</span>
+            </div>
+            <div class="od-partner-card__trust-item">
+                <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M8 0L6 3 2 3.5l3 3L4 10l4-2 4 2-1-3.5 3-3L10 3 8 0z"/>
+                </svg>
+                <span class="od-partner-card__trust-label"><!-- INJECT: partner.projects -->+ Projekte</span>
+            </div>
+            <div class="od-partner-card__trust-item">
+                <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm-1 12l-3-3 1.4-1.4L7 9.2l3.6-3.6L12 7l-5 5z"/>
+                </svg>
+                <span class="od-partner-card__trust-label">Zertifiziert</span>
+            </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="od-partner-card__certifications">
+            <!-- INJECT: partner.certifications -->
+            <div class="od-certification od-certification--tuv" title="TÜV geprüft">
+                <svg class="od-certification__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" fill="#0066CC" opacity="0.1"/>
+                    <path fill="#0066CC" d="M10 15l-3-3 1.4-1.4L10 12.2l5.6-5.6L17 8l-7 7z"/>
+                </svg>
+            </div>
+            <div class="od-certification od-certification--dsgvo" title="DSGVO konform">
+                <svg class="od-certification__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="#00A36C" d="M12 2L4 7v5c0 5 3.4 9.8 8 11 4.6-1.2 8-6 8-11V7l-8-5z" opacity="0.1"/>
+                    <path fill="#00A36C" d="M12 2L4 7v5c0 5 3.4 9.8 8 11 4.6-1.2 8-6 8-11V7l-8-5zm-2 13l-3-3 1.4-1.4L10 12.2l5.6-5.6L17 8l-7 7z"/>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="od-partner-card__actions">
+            <a href="<!-- INJECT: partner.url -->" class="od-btn od-btn--secondary od-btn--sm od-btn--block">
+                Mehr erfahren
+                <svg class="od-icon od-icon--sm" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                    <path fill="currentColor" d="M4 2l4 4-4 4"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,374 @@
+<!-- Homepage Template -->
+<section class="od-hero">
+    <div class="od-hero__background">
+        <div class="od-hero__gradient"></div>
+        <div class="od-hero__pattern"></div>
+    </div>
+    <div class="container">
+        <div class="od-hero__content">
+            <h1 class="od-hero__title">
+                Finden Sie den perfekten 
+                <span class="od-hero__highlight">Odoo Partner</span> 
+                für Ihr Unternehmen
+            </h1>
+            <p class="od-hero__subtitle">
+                Deutschlands führende Plattform für zertifizierte Odoo-Experten. 
+                Über <span class="od-hero__count" data-count="250">250+</span> verifizierte Partner für Ihre digitale Transformation.
+            </p>
+            
+            <!-- Quick Search Widget -->
+            <div class="od-quick-search">
+                <form class="od-quick-search__form" action="/partner/" method="get">
+                    <div class="od-quick-search__fields">
+                        <div class="od-quick-search__field od-quick-search__field--location">
+                            <svg class="od-quick-search__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="currentColor" d="M10 2C6.1 2 3 5.1 3 9c0 5.9 7 9 7 9s7-3.1 7-9c0-3.9-3.1-7-7-7zm0 10c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+                            </svg>
+                            <input 
+                                type="text" 
+                                name="location" 
+                                placeholder="Stadt oder Region" 
+                                class="od-quick-search__input"
+                                autocomplete="off"
+                                data-autocomplete="location"
+                            >
+                            <div class="od-quick-search__suggestions" data-suggestions="location"></div>
+                        </div>
+                        <div class="od-quick-search__field od-quick-search__field--service">
+                            <svg class="od-quick-search__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="currentColor" d="M10 2C5.6 2 2 5.6 2 10s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm1-6H9V7H7v5h6v-2z"/>
+                            </svg>
+                            <select name="service" class="od-quick-search__input od-quick-search__select">
+                                <option value="">Alle Services</option>
+                                <option value="implementation">ERP Implementierung</option>
+                                <option value="migration">Migration & Upgrade</option>
+                                <option value="customization">Anpassungen & Module</option>
+                                <option value="support">Support & Wartung</option>
+                                <option value="training">Schulung & Training</option>
+                                <option value="consulting">Beratung & Analyse</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="od-quick-search__submit">
+                            Partner finden
+                            <svg class="od-quick-search__arrow" width="16" height="16" viewBox="0 0 16 16">
+                                <path fill="currentColor" d="M6 3l5 5-5 5V3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="od-hero__trust">
+                <div class="od-hero__trust-item">
+                    <svg class="od-hero__trust-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1 15l-4-4 1.4-1.4L11 14.2l5.6-5.6L18 10l-7 7z"/>
+                    </svg>
+                    <span>Geprüfte Partner</span>
+                </div>
+                <div class="od-hero__trust-item">
+                    <svg class="od-hero__trust-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2L4 7v5c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V7l-8-5z"/>
+                    </svg>
+                    <span>DSGVO konform</span>
+                </div>
+                <div class="od-hero__trust-item">
+                    <svg class="od-hero__trust-icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/>
+                    </svg>
+                    <span>Top bewertete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Categories -->
+<section class="od-services">
+    <div class="container">
+        <div class="od-services__header">
+            <h2 class="od-services__title">Finden Sie Experten für jeden Bereich</h2>
+            <p class="od-services__subtitle">Von der Implementierung bis zur laufenden Betreuung</p>
+        </div>
+        <div class="od-services__grid">
+            <a href="/partner/?service=implementation" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8zm8 18h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">ERP Implementierung</h3>
+                <p class="od-service-card__description">Komplette Einführung von Odoo in Ihrem Unternehmen</p>
+                <span class="od-service-card__count">127 Partner</span>
+            </a>
+            <a href="/partner/?service=migration" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M32 20v-4c0-4.4-3.6-8-8-8s-8 3.6-8 8v4h-2v16h20V20h-2zm-12-4c0-2.2 1.8-4 4-4s4 1.8 4 4v4h-8v-4z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Migration & Upgrade</h3>
+                <p class="od-service-card__description">Sichere Datenmigration und Version-Updates</p>
+                <span class="od-service-card__count">89 Partner</span>
+            </a>
+            <a href="/partner/?service=customization" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M31.5 12.5l4 4L20 32l-8 2 2-8 17.5-17.5zm4.5-2.5l-2-2c-1.2-1.2-3.1-1.2-4.2 0l-2.3 2.3 6.2 6.2 2.3-2.3c1.2-1.1 1.2-3 0-4.2z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Anpassungen</h3>
+                <p class="od-service-card__description">Individuelle Module und Workflows</p>
+                <span class="od-service-card__count">156 Partner</span>
+            </a>
+            <a href="/partner/?service=support" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8zm0 28c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12zm1-12h-2v-8h2v8zm0 4h-2v-2h2v2z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Support & Wartung</h3>
+                <p class="od-service-card__description">Laufende Betreuung und Optimierung</p>
+                <span class="od-service-card__count">198 Partner</span>
+            </a>
+            <a href="/partner/?service=training" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M24 8L12 14v11c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V14L24 8zm8 15H16v-7l8-4 8 4v7z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Schulungen</h3>
+                <p class="od-service-card__description">Mitarbeiter-Training und Workshops</p>
+                <span class="od-service-card__count">112 Partner</span>
+            </a>
+            <a href="/partner/?service=consulting" class="od-service-card">
+                <div class="od-service-card__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+                        <path fill="currentColor" d="M28 20v-4c0-2.2-1.8-4-4-4s-4 1.8-4 4v4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-4 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm2-8h-4v-4c0-1.1.9-2 2-2s2 .9 2 2v4z"/>
+                    </svg>
+                </div>
+                <h3 class="od-service-card__title">Beratung</h3>
+                <p class="od-service-card__description">Strategische Prozessberatung</p>
+                <span class="od-service-card__count">143 Partner</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Partners -->
+<section class="od-featured-partners">
+    <div class="container">
+        <div class="od-featured-partners__header">
+            <h2 class="od-featured-partners__title">Empfohlene Partner</h2>
+            <p class="od-featured-partners__subtitle">Top-bewertete Experten mit nachgewiesener Erfolgsbilanz</p>
+        </div>
+        <div class="od-featured-partners__grid">
+            <!-- Partner cards will be injected here -->
+            <!-- INJECT: featured-partners -->
+        </div>
+        <div class="od-featured-partners__action">
+            <a href="/partner/" class="od-btn od-btn--primary od-btn--lg">
+                Alle Partner entdecken
+                <svg class="od-btn__icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="M7 4l6 6-6 6V4z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Success Metrics -->
+<section class="od-metrics">
+    <div class="container">
+        <div class="od-metrics__grid">
+            <div class="od-metric">
+                <div class="od-metric__value" data-counter="250">250+</div>
+                <div class="od-metric__label">Verifizierte Partner</div>
+            </div>
+            <div class="od-metric">
+                <div class="od-metric__value" data-counter="12500">12.500+</div>
+                <div class="od-metric__label">Erfolgreiche Projekte</div>
+            </div>
+            <div class="od-metric">
+                <div class="od-metric__value" data-counter="98">98%</div>
+                <div class="od-metric__label">Kundenzufriedenheit</div>
+            </div>
+            <div class="od-metric">
+                <div class="od-metric__value">24h</div>
+                <div class="od-metric__label">Ø Antwortzeit</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Blog Posts -->
+<section class="od-blog-section">
+    <div class="container">
+        <div class="od-blog-section__header">
+            <h2 class="od-blog-section__title">Aktuelle Insights & News</h2>
+            <p class="od-blog-section__subtitle">Bleiben Sie auf dem Laufenden mit Odoo 19 und Best Practices</p>
+        </div>
+        <div class="od-blog-section__grid">
+            <!-- Blog cards will be injected here -->
+            <!-- INJECT: recent-articles -->
+        </div>
+        <div class="od-blog-section__action">
+            <a href="/blog/" class="od-btn od-btn--secondary od-btn--lg">
+                Alle Artikel lesen
+                <svg class="od-btn__icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="M7 4l6 6-6 6V4z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="od-testimonials">
+    <div class="container">
+        <div class="od-testimonials__header">
+            <h2 class="od-testimonials__title">Was unsere Kunden sagen</h2>
+        </div>
+        <div class="od-testimonials__grid">
+            <div class="od-testimonial">
+                <div class="od-testimonial__content">
+                    <div class="od-testimonial__stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                    </div>
+                    <p class="od-testimonial__text">
+                        "Über diese Plattform haben wir den perfekten Partner für unsere Odoo-Migration gefunden. Die Qualität der Partner ist durchweg hervorragend."
+                    </p>
+                    <div class="od-testimonial__author">
+                        <strong>Michael Schmidt</strong>
+                        <span>Geschäftsführer, TechnoGmbH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="od-testimonial">
+                <div class="od-testimonial__content">
+                    <div class="od-testimonial__stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                    </div>
+                    <p class="od-testimonial__text">
+                        "Die Filteroptionen und detaillierten Partnerprofile haben uns geholfen, schnell den richtigen Dienstleister zu finden."
+                    </p>
+                    <div class="od-testimonial__author">
+                        <strong>Sarah Weber</strong>
+                        <span>IT-Leiterin, LogistikPro AG</span>
+                    </div>
+                </div>
+            </div>
+            <div class="od-testimonial">
+                <div class="od-testimonial__content">
+                    <div class="od-testimonial__stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2l2.4 4.8 5.4.8-3.9 3.8.9 5.4L10 14.3 5.2 16.8l.9-5.4L2.2 7.6l5.4-.8L10 2z"/>
+                        </svg>
+                    </div>
+                    <p class="od-testimonial__text">
+                        "Transparente Bewertungen und klare Spezialisierungen - genau das, was wir für unsere Partnerauswahl brauchten."
+                    </p>
+                    <div class="od-testimonial__author">
+                        <strong>Thomas Müller</strong>
+                        <span>CEO, IndustrieService GmbH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="od-cta">
+    <div class="container">
+        <div class="od-cta__content">
+            <h2 class="od-cta__title">Bereit für Ihre digitale Transformation?</h2>
+            <p class="od-cta__subtitle">
+                Finden Sie noch heute den passenden Odoo-Partner für Ihr Projekt
+            </p>
+            <div class="od-cta__actions">
+                <a href="/partner/" class="od-btn od-btn--white od-btn--lg">
+                    Partner suchen
+                    <svg class="od-btn__icon" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M7 4l6 6-6 6V4z"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="od-btn od-btn--ghost od-btn--lg">
+                    Beratung anfordern
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="od-newsletter">
+    <div class="container">
+        <div class="od-newsletter__content">
+            <div class="od-newsletter__text">
+                <h3 class="od-newsletter__title">Bleiben Sie informiert</h3>
+                <p class="od-newsletter__description">
+                    Erhalten Sie monatliche Updates zu neuen Partnern, Odoo-Features und Best Practices
+                </p>
+            </div>
+            <form class="od-newsletter__form" data-newsletter-form>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Ihre E-Mail-Adresse" 
+                    required
+                    class="od-newsletter__input"
+                >
+                <button type="submit" class="od-newsletter__submit">
+                    Anmelden
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

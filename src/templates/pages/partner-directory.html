@@ -1,0 +1,331 @@
+<!-- Partner Directory Header -->
+<section class="od-page-header od-page-header--partners">
+    <div class="od-container">
+        <nav class="od-breadcrumb" aria-label="Breadcrumb">
+            <ol class="od-breadcrumb__list">
+                <li class="od-breadcrumb__item">
+                    <a href="/" class="od-breadcrumb__link">Startseite</a>
+                </li>
+                <li class="od-breadcrumb__item od-breadcrumb__item--active" aria-current="page">
+                    Partner-Verzeichnis
+                </li>
+            </ol>
+        </nav>
+        
+        <h1 class="od-page-header__title">Zertifizierte Odoo Partner in Deutschland</h1>
+        <p class="od-page-header__subtitle">
+            Finden Sie den idealen Partner für Ihre Odoo-Projekte aus über 150 geprüften Experten
+        </p>
+        
+        <!-- Quick Stats -->
+        <div class="od-stats-bar">
+            <div class="od-stats-bar__item">
+                <span class="od-stats-bar__number"><!-- INJECT: stats.totalPartners --></span>
+                <span class="od-stats-bar__label">Partner</span>
+            </div>
+            <div class="od-stats-bar__item">
+                <span class="od-stats-bar__number"><!-- INJECT: stats.totalCities --></span>
+                <span class="od-stats-bar__label">Städte</span>
+            </div>
+            <div class="od-stats-bar__item">
+                <span class="od-stats-bar__number"><!-- INJECT: stats.totalProjects --></span>
+                <span class="od-stats-bar__label">Projekte</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partner Search & Filters -->
+<section class="od-partner-search">
+    <div class="od-container">
+        <form class="od-search-form od-search-form--advanced" data-partner-search>
+            <div class="od-search-form__main">
+                <div class="od-search-form__row">
+                    <div class="od-search-form__group od-search-form__group--wide">
+                        <label for="partner-keyword" class="od-search-form__label">Suchwort</label>
+                        <input 
+                            type="search" 
+                            id="partner-keyword" 
+                            name="keyword" 
+                            class="od-search-form__input" 
+                            placeholder="z.B. Warenwirtschaft, Buchhaltung, CRM..."
+                        >
+                    </div>
+                    <div class="od-search-form__group">
+                        <label for="partner-location" class="od-search-form__label">Standort</label>
+                        <input 
+                            type="text" 
+                            id="partner-location" 
+                            name="location" 
+                            class="od-search-form__input" 
+                            placeholder="Stadt oder PLZ"
+                            list="location-suggestions"
+                        >
+                        <datalist id="location-suggestions">
+                            <option value="Berlin">
+                            <option value="Hamburg">
+                            <option value="München">
+                            <option value="Köln">
+                            <option value="Frankfurt">
+                            <option value="Stuttgart">
+                            <option value="Düsseldorf">
+                            <option value="Leipzig">
+                        </datalist>
+                    </div>
+                    <div class="od-search-form__group">
+                        <label for="partner-radius" class="od-search-form__label">Umkreis</label>
+                        <select id="partner-radius" name="radius" class="od-search-form__select">
+                            <option value="">Deutschlandweit</option>
+                            <option value="25">25 km</option>
+                            <option value="50">50 km</option>
+                            <option value="100">100 km</option>
+                            <option value="200">200 km</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Advanced Filters Toggle -->
+                <button type="button" class="od-search-form__toggle" aria-expanded="false" aria-controls="advanced-filters">
+                    <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="currentColor" d="M3 3h10v2H3zm0 4h7v2H3zm0 4h4v2H3z"/>
+                    </svg>
+                    Erweiterte Filter
+                </button>
+                
+                <!-- Search Button -->
+                <button type="submit" class="od-btn od-btn--primary od-btn--lg od-search-form__submit">
+                    <svg class="od-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M19.7 18.3l-5.4-5.4C15.4 11.5 16 9.8 16 8c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.7l5.4 5.4c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM2 8c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z"/>
+                    </svg>
+                    Partner suchen
+                </button>
+            </div>
+            
+            <!-- Advanced Filters -->
+            <div class="od-search-form__advanced" id="advanced-filters" hidden>
+                <div class="od-search-form__filters">
+                    <!-- Services -->
+                    <fieldset class="od-filter-group">
+                        <legend class="od-filter-group__title">Leistungen</legend>
+                        <div class="od-filter-group__options">
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="erp-implementation">
+                                <span class="od-checkbox__label">ERP Implementierung</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="odoo-hosting">
+                                <span class="od-checkbox__label">Odoo Hosting</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="dsgvo-compliance">
+                                <span class="od-checkbox__label">DSGVO Compliance</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="support-maintenance">
+                                <span class="od-checkbox__label">Support & Wartung</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="custom-development">
+                                <span class="od-checkbox__label">Individuelle Entwicklung</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="services[]" value="training">
+                                <span class="od-checkbox__label">Schulungen</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Industries -->
+                    <fieldset class="od-filter-group">
+                        <legend class="od-filter-group__title">Branchen</legend>
+                        <div class="od-filter-group__options">
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="manufacturing">
+                                <span class="od-checkbox__label">Produktion</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="retail">
+                                <span class="od-checkbox__label">Handel</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="services">
+                                <span class="od-checkbox__label">Dienstleistung</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="logistics">
+                                <span class="od-checkbox__label">Logistik</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="healthcare">
+                                <span class="od-checkbox__label">Gesundheitswesen</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="industries[]" value="construction">
+                                <span class="od-checkbox__label">Baugewerbe</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Company Size -->
+                    <fieldset class="od-filter-group">
+                        <legend class="od-filter-group__title">Unternehmensgröße</legend>
+                        <div class="od-filter-group__options">
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="company_size[]" value="startup">
+                                <span class="od-checkbox__label">Startups (1-10)</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="company_size[]" value="small">
+                                <span class="od-checkbox__label">Klein (11-50)</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="company_size[]" value="medium">
+                                <span class="od-checkbox__label">Mittel (51-250)</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="company_size[]" value="large">
+                                <span class="od-checkbox__label">Groß (250+)</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Certifications -->
+                    <fieldset class="od-filter-group">
+                        <legend class="od-filter-group__title">Zertifizierungen</legend>
+                        <div class="od-filter-group__options">
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="certifications[]" value="odoo-partner">
+                                <span class="od-checkbox__label">Odoo Partner</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="certifications[]" value="tuv">
+                                <span class="od-checkbox__label">TÜV geprüft</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="certifications[]" value="iso-27001">
+                                <span class="od-checkbox__label">ISO 27001</span>
+                            </label>
+                            <label class="od-checkbox">
+                                <input type="checkbox" name="certifications[]" value="dsgvo-expert">
+                                <span class="od-checkbox__label">DSGVO Experte</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Active Filters -->
+        <div class="od-active-filters" data-active-filters hidden>
+            <span class="od-active-filters__label">Aktive Filter:</span>
+            <div class="od-active-filters__list">
+                <!-- Active filter tags will be injected here -->
+            </div>
+            <button type="button" class="od-active-filters__clear" data-clear-all>
+                Alle löschen
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section class="od-partner-results">
+    <div class="od-container">
+        <!-- Results Header -->
+        <div class="od-results-header">
+            <div class="od-results-header__info">
+                <h2 class="od-results-header__title">
+                    <span data-results-count><!-- INJECT: resultsCount --></span> Partner gefunden
+                </h2>
+                <p class="od-results-header__subtitle" data-results-description>
+                    <!-- INJECT: resultsDescription -->
+                </p>
+            </div>
+            <div class="od-results-header__controls">
+                <div class="od-sort-control">
+                    <label for="results-sort" class="od-sort-control__label">Sortieren nach:</label>
+                    <select id="results-sort" class="od-sort-control__select" data-sort>
+                        <option value="relevance">Relevanz</option>
+                        <option value="rating">Bewertung</option>
+                        <option value="experience">Erfahrung</option>
+                        <option value="projects">Anzahl Projekte</option>
+                        <option value="distance">Entfernung</option>
+                    </select>
+                </div>
+                <div class="od-view-toggle" role="group" aria-label="Ansicht wechseln">
+                    <button type="button" class="od-view-toggle__btn od-view-toggle__btn--active" data-view="grid" aria-pressed="true">
+                        <svg class="od-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M3 3h6v6H3zm8 0h6v6h-6zM3 11h6v6H3zm8 0h6v6h-6z"/>
+                        </svg>
+                        <span class="od-sr-only">Kachelansicht</span>
+                    </button>
+                    <button type="button" class="od-view-toggle__btn" data-view="list" aria-pressed="false">
+                        <svg class="od-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M3 4h14v2H3zm0 5h14v2H3zm0 5h14v2H3z"/>
+                        </svg>
+                        <span class="od-sr-only">Listenansicht</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partner Grid/List -->
+        <div class="od-partners-container" data-partners-container>
+            <div class="od-partners-grid" data-view-target="grid">
+                <!-- INJECT: partnerCards -->
+                <!-- Partner cards will be injected here -->
+            </div>
+            
+            <!-- Loading State -->
+            <div class="od-loading" data-loading hidden>
+                <div class="od-loading__spinner"></div>
+                <p class="od-loading__text">Partner werden geladen...</p>
+            </div>
+            
+            <!-- No Results -->
+            <div class="od-no-results" data-no-results hidden>
+                <svg class="od-no-results__icon" width="80" height="80" viewBox="0 0 80 80" aria-hidden="true">
+                    <circle cx="40" cy="40" r="35" fill="var(--od-gray-200)"/>
+                    <path fill="var(--od-gray-400)" d="M40 20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 35c-8.3 0-15-6.7-15-15s6.7-15 15-15 15 6.7 15 15-6.7 15-15 15z"/>
+                    <path fill="var(--od-gray-400)" d="M47 33L33 47M33 33l14 14" stroke="var(--od-gray-400)" stroke-width="3"/>
+                </svg>
+                <h3 class="od-no-results__title">Keine Partner gefunden</h3>
+                <p class="od-no-results__text">
+                    Versuchen Sie es mit anderen Suchkriterien oder erweitern Sie Ihren Suchradius.
+                </p>
+                <button type="button" class="od-btn od-btn--secondary" data-reset-search>
+                    Suche zurücksetzen
+                </button>
+            </div>
+        </div>
+        
+        <!-- Load More / Pagination -->
+        <div class="od-load-more" data-load-more>
+            <button type="button" class="od-btn od-btn--secondary od-btn--lg" data-load-more-btn>
+                Weitere Partner laden
+                <svg class="od-icon od-icon--sm" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M8 11L3 6h10z"/>
+                </svg>
+            </button>
+            <p class="od-load-more__info">
+                <span data-showing>20</span> von <span data-total>150</span> Partnern angezeigt
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Partner CTA -->
+<section class="od-section od-partner-cta">
+    <div class="od-container">
+        <div class="od-cta od-cta--centered">
+            <h2 class="od-cta__title">Nicht den passenden Partner gefunden?</h2>
+            <p class="od-cta__description">
+                Lassen Sie sich von unseren Experten beraten. Wir helfen Ihnen, 
+                den idealen Odoo Partner für Ihr Projekt zu finden.
+            </p>
+            <a href="/beratung" class="od-btn od-btn--primary od-btn--lg">
+                Kostenlose Beratung anfordern
+            </a>
+        </div>
+    </div>
+</section>

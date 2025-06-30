@@ -1,0 +1,173 @@
+<!-- Article Header -->
+<section class="pro-article-header">
+    <div class="pro-article-header__container">
+        <nav class="pro-breadcrumb" aria-label="Breadcrumb">
+            <ol class="pro-breadcrumb__list">
+                <li class="pro-breadcrumb__item">
+                    <a href="/" class="pro-breadcrumb__link">Startseite</a>
+                </li>
+                <li class="pro-breadcrumb__item">
+                    <a href="/blog" class="pro-breadcrumb__link">Blog</a>
+                </li>
+                <li class="pro-breadcrumb__item">
+                    <a href="/blog/kategorie/<!-- INJECT: article.category -->" class="pro-breadcrumb__link"><!-- INJECT: article.categoryName --></a>
+                </li>
+                <li class="pro-breadcrumb__item pro-breadcrumb__item--active" aria-current="page">
+                    <!-- INJECT: article.shortTitle -->
+                </li>
+            </ol>
+        </nav>
+        
+        <div class="pro-article-header__meta">
+            <span class="pro-article-header__category"><!-- INJECT: article.categoryName --></span>
+            <time class="pro-article-header__date" datetime="<!-- INJECT: article.dateISO -->"><!-- INJECT: article.dateFormatted --></time>
+            <span class="pro-article-header__reading-time"><!-- INJECT: article.readingTime --> Min. Lesezeit</span>
+        </div>
+        
+        <h1 class="pro-article-header__title"><!-- INJECT: article.title --></h1>
+        
+        <p class="pro-article-header__excerpt"><!-- INJECT: article.excerpt --></p>
+        
+        <div class="pro-article-header__author">
+            <img src="<!-- INJECT: article.authorAvatar -->" alt="<!-- INJECT: article.authorName -->" class="pro-article-header__author-avatar" width="48" height="48">
+            <div class="pro-article-header__author-info">
+                <span class="pro-article-header__author-name"><!-- INJECT: article.authorName --></span>
+                <span class="pro-article-header__author-title"><!-- INJECT: article.authorTitle --></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Article Content -->
+<article class="pro-article">
+    <div class="pro-article__container">
+        <div class="pro-article__layout">
+            <!-- Table of Contents -->
+            <aside class="pro-article__toc-sidebar">
+                <div class="pro-toc" data-toc>
+                    <h3 class="pro-toc__title">Inhaltsverzeichnis</h3>
+                    <nav class="pro-toc__nav" aria-label="Inhaltsverzeichnis">
+                        <ol class="pro-toc__list">
+                            <!-- INJECT: tableOfContents -->
+                        </ol>
+                    </nav>
+                </div>
+            </aside>
+            
+            <!-- Main Content -->
+            <div class="pro-article__content">
+                <!-- Featured Image -->
+                <figure class="pro-article__featured-image">
+                    <img src="<!-- INJECT: article.featuredImage -->" alt="<!-- INJECT: article.featuredImageAlt -->" class="pro-article__image" width="720" height="400">
+                    <figcaption class="pro-article__image-caption"><!-- INJECT: article.imageCaption --></figcaption>
+                </figure>
+                
+                <!-- Article Body -->
+                <div class="pro-article__body">
+                    <!-- INJECT: article.content -->
+                </div>
+                
+                <!-- Article Footer -->
+                <footer class="pro-article__footer">
+                    <!-- Tags -->
+                    <div class="pro-article__tags">
+                        <span class="pro-article__tags-label">Schlagwörter:</span>
+                        <div class="pro-article__tags-list">
+                            <!-- INJECT: article.tags -->
+                        </div>
+                    </div>
+                    
+                    <!-- Share Buttons -->
+                    <div class="pro-article__share">
+                        <span class="pro-article__share-label">Artikel teilen:</span>
+                        <div class="pro-article__share-buttons">
+                            <a href="#" class="pro-article__share-button pro-article__share-button--linkedin" aria-label="Auf LinkedIn teilen" data-share="linkedin">
+                                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill="currentColor" d="M17.5 0h-15C1.1 0 0 1.1 0 2.5v15C0 18.9 1.1 20 2.5 20h15c1.4 0 2.5-1.1 2.5-2.5v-15C20 1.1 18.9 0 17.5 0zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.7-.8-1.7-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8c0 1-.8 1.8-1.9 1.8zM17 17h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V17h-3V8h2.9v1.3h0c.4-.7 1.4-1.5 2.8-1.5 3 0 3.6 2 3.6 4.5V17z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="pro-article__share-button pro-article__share-button--twitter" aria-label="Auf Twitter teilen" data-share="twitter">
+                                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill="currentColor" d="M18.9 4.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.7.4-1.5.7-2.4.9-.7-.7-1.7-1.2-2.8-1.2-2.1 0-3.8 1.7-3.8 3.8 0 .3 0 .6.1.9-3.2-.2-6-1.7-7.9-4-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.1-.6 0-1.2-.2-1.7-.5v.1c0 1.8 1.3 3.4 3 3.7-.3.1-.6.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.9 2.6 3.5 2.6-1.3 1-2.9 1.6-4.7 1.6-.3 0-.6 0-.9-.1 1.7 1.1 3.6 1.7 5.8 1.7 6.9 0 10.7-5.7 10.7-10.7v-.5c.8-.5 1.4-1.2 1.9-1.9z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="pro-article__share-button pro-article__share-button--email" aria-label="Per E-Mail teilen" data-share="email">
+                                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill="currentColor" d="M18 4H2C.9 4 0 4.9 0 6v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.5L10 11 2 6.5V6h16zM2 14V9l8 4.5L18 9v5H2z"/>
+                                </svg>
+                            </a>
+                            <button class="pro-article__share-button pro-article__share-button--copy" aria-label="Link kopieren" data-share="copy">
+                                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill="currentColor" d="M11 0H3C1.9 0 1 .9 1 2v12h2V2h8V0zm4 4H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H7V6h8v12z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            
+            <!-- Right Sidebar -->
+            <aside class="pro-article__sidebar">
+                <!-- Sticky Share -->
+                <div class="pro-article__sticky-share" data-sticky-share>
+                    <span class="pro-article__sticky-share-label">Teilen</span>
+                    <div class="pro-article__sticky-share-buttons">
+                        <a href="#" class="pro-article__sticky-share-button" aria-label="Auf LinkedIn teilen" data-share="linkedin">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill="currentColor" d="M17.5 0h-15C1.1 0 0 1.1 0 2.5v15C0 18.9 1.1 20 2.5 20h15c1.4 0 2.5-1.1 2.5-2.5v-15C20 1.1 18.9 0 17.5 0zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.7-.8-1.7-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8c0 1-.8 1.8-1.9 1.8zM17 17h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V17h-3V8h2.9v1.3h0c.4-.7 1.4-1.5 2.8-1.5 3 0 3.6 2 3.6 4.5V17z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="pro-article__sticky-share-button" aria-label="Auf Twitter teilen" data-share="twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill="currentColor" d="M18.9 4.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.7.4-1.5.7-2.4.9-.7-.7-1.7-1.2-2.8-1.2-2.1 0-3.8 1.7-3.8 3.8 0 .3 0 .6.1.9-3.2-.2-6-1.7-7.9-4-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.1-.6 0-1.2-.2-1.7-.5v.1c0 1.8 1.3 3.4 3 3.7-.3.1-.6.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.9 2.6 3.5 2.6-1.3 1-2.9 1.6-4.7 1.6-.3 0-.6 0-.9-.1 1.7 1.1 3.6 1.7 5.8 1.7 6.9 0 10.7-5.7 10.7-10.7v-.5c.8-.5 1.4-1.2 1.9-1.9z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="pro-article__sticky-share-button" aria-label="Per E-Mail teilen" data-share="email">
+                            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill="currentColor" d="M18 4H2C.9 4 0 4.9 0 6v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.5L10 11 2 6.5V6h16zM2 14V9l8 4.5L18 9v5H2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</article>
+
+<!-- Author Bio -->
+<section class="pro-author-bio">
+    <div class="pro-author-bio__container">
+        <div class="pro-author-bio__card">
+            <img src="<!-- INJECT: article.authorAvatar -->" alt="<!-- INJECT: article.authorName -->" class="pro-author-bio__avatar" width="96" height="96">
+            <div class="pro-author-bio__content">
+                <h3 class="pro-author-bio__name"><!-- INJECT: article.authorName --></h3>
+                <p class="pro-author-bio__title"><!-- INJECT: article.authorTitle --></p>
+                <p class="pro-author-bio__description">
+                    <!-- INJECT: article.authorBio -->
+                </p>
+                <div class="pro-author-bio__social">
+                    <a href="<!-- INJECT: article.authorLinkedIn -->" class="pro-author-bio__social-link" aria-label="LinkedIn Profil" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="currentColor" d="M17.5 0h-15C1.1 0 0 1.1 0 2.5v15C0 18.9 1.1 20 2.5 20h15c1.4 0 2.5-1.1 2.5-2.5v-15C20 1.1 18.9 0 17.5 0zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.7-.8-1.7-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8c0 1-.8 1.8-1.9 1.8zM17 17h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V17h-3V8h2.9v1.3h0c.4-.7 1.4-1.5 2.8-1.5 3 0 3.6 2 3.6 4.5V17z"/>
+                        </svg>
+                    </a>
+                    <a href="<!-- INJECT: article.authorTwitter -->" class="pro-author-bio__social-link" aria-label="Twitter Profil" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="currentColor" d="M18.9 4.8c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.7.4-1.5.7-2.4.9-.7-.7-1.7-1.2-2.8-1.2-2.1 0-3.8 1.7-3.8 3.8 0 .3 0 .6.1.9-3.2-.2-6-1.7-7.9-4-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.1-.6 0-1.2-.2-1.7-.5v.1c0 1.8 1.3 3.4 3 3.7-.3.1-.6.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.9 2.6 3.5 2.6-1.3 1-2.9 1.6-4.7 1.6-.3 0-.6 0-.9-.1 1.7 1.1 3.6 1.7 5.8 1.7 6.9 0 10.7-5.7 10.7-10.7v-.5c.8-.5 1.4-1.2 1.9-1.9z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Articles -->
+<section class="pro-related-articles">
+    <div class="pro-related-articles__container">
+        <h2 class="pro-related-articles__title">Ähnliche Artikel</h2>
+        <div class="pro-related-articles__grid">
+            <!-- INJECT: relatedArticles -->
+        </div>
+    </div>
+</section>

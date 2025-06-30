@@ -1,0 +1,722 @@
+/* Grove Design System - Clean, Minimal, Modern */
+
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Colors */
+    --grove-black: #000000;
+    --grove-white: #ffffff;
+    --grove-gray-50: #fafafa;
+    --grove-gray-100: #f5f5f5;
+    --grove-gray-200: #e5e5e5;
+    --grove-gray-300: #d4d4d4;
+    --grove-gray-400: #a3a3a3;
+    --grove-gray-500: #737373;
+    --grove-gray-600: #525252;
+    --grove-gray-700: #404040;
+    --grove-gray-800: #262626;
+    --grove-gray-900: #171717;
+    
+    /* Brand Colors */
+    --grove-primary: #714b67;
+    --grove-primary-dark: #5a3c52;
+    --grove-primary-light: #8e6082;
+    
+    /* Spacing */
+    --grove-space-xs: 0.5rem;
+    --grove-space-sm: 1rem;
+    --grove-space-md: 2rem;
+    --grove-space-lg: 4rem;
+    --grove-space-xl: 6rem;
+    --grove-space-2xl: 8rem;
+    
+    /* Typography */
+    --grove-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --grove-line-height: 1.6;
+    --grove-line-height-tight: 1.2;
+    
+    /* Shadows */
+    --grove-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --grove-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --grove-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --grove-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+    
+    /* Transitions */
+    --grove-transition: all 0.2s ease;
+    --grove-transition-slow: all 0.3s ease;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--grove-font-family);
+    line-height: var(--grove-line-height);
+    color: var(--grove-gray-900);
+    background: var(--grove-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.grove-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--grove-space-md);
+}
+
+@media (max-width: 768px) {
+    .grove-container {
+        padding: 0 var(--grove-space-sm);
+    }
+}
+
+/* Hero Section */
+.grove-hero {
+    padding: var(--grove-space-2xl) 0;
+    background: linear-gradient(180deg, var(--grove-gray-50) 0%, var(--grove-white) 100%);
+}
+
+@media (max-width: 768px) {
+    .grove-hero {
+        padding: var(--grove-space-xl) 0;
+    }
+}
+
+.grove-hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grove-hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: var(--grove-line-height-tight);
+    margin-bottom: var(--grove-space-md);
+    letter-spacing: -0.02em;
+}
+
+.grove-hero__accent {
+    color: var(--grove-primary);
+}
+
+.grove-hero__subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--grove-gray-600);
+    margin-bottom: var(--grove-space-lg);
+    font-weight: 400;
+}
+
+/* Search Form */
+.grove-search {
+    margin-bottom: var(--grove-space-lg);
+}
+
+.grove-search__form {
+    display: flex;
+    gap: var(--grove-space-sm);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .grove-search__form {
+        flex-direction: column;
+    }
+}
+
+.grove-search__input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--grove-gray-300);
+    border-radius: 12px;
+    background: var(--grove-white);
+    transition: var(--grove-transition);
+    font-family: var(--grove-font-family);
+}
+
+.grove-search__input:focus {
+    outline: none;
+    border-color: var(--grove-primary);
+    box-shadow: 0 0 0 3px rgba(113, 75, 103, 0.1);
+}
+
+.grove-search__button {
+    padding: 1rem 2rem;
+    background: var(--grove-black);
+    color: var(--grove-white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--grove-transition);
+    display: flex;
+    align-items: center;
+    gap: var(--grove-space-xs);
+    font-family: var(--grove-font-family);
+    white-space: nowrap;
+}
+
+.grove-search__button:hover {
+    background: var(--grove-gray-800);
+    transform: translateY(-1px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+/* Trust Indicators */
+.grove-trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--grove-space-sm);
+    flex-wrap: wrap;
+    color: var(--grove-gray-500);
+    font-size: 0.875rem;
+}
+
+.grove-trust__separator {
+    color: var(--grove-gray-300);
+}
+
+/* Section Headers */
+.grove-section-header {
+    text-align: center;
+    margin-bottom: var(--grove-space-xl);
+}
+
+.grove-section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: var(--grove-line-height-tight);
+    margin-bottom: var(--grove-space-sm);
+    letter-spacing: -0.02em;
+}
+
+.grove-section-subtitle {
+    font-size: 1.125rem;
+    color: var(--grove-gray-600);
+}
+
+.grove-section-footer {
+    text-align: center;
+    margin-top: var(--grove-space-lg);
+}
+
+/* Services Section */
+.grove-services {
+    padding: var(--grove-space-2xl) 0;
+}
+
+.grove-services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--grove-space-md);
+}
+
+.grove-service-card {
+    padding: var(--grove-space-lg);
+    background: var(--grove-white);
+    border: 1px solid var(--grove-gray-200);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: var(--grove-transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grove-service-card:hover {
+    border-color: var(--grove-gray-300);
+    transform: translateY(-2px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+.grove-service-card__icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: var(--grove-space-md);
+    color: var(--grove-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--grove-gray-50);
+    border-radius: 12px;
+}
+
+.grove-service-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--grove-space-xs);
+}
+
+.grove-service-card__description {
+    color: var(--grove-gray-600);
+    line-height: 1.5;
+}
+
+/* Partners Section */
+.grove-partners {
+    padding: var(--grove-space-2xl) 0;
+    background: var(--grove-gray-50);
+}
+
+.grove-partners__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--grove-space-md);
+}
+
+@media (max-width: 768px) {
+    .grove-partners__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Stats Section */
+.grove-stats {
+    padding: var(--grove-space-xl) 0;
+}
+
+.grove-stats__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--grove-space-xl);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .grove-stats__grid {
+        gap: var(--grove-space-lg);
+    }
+}
+
+.grove-stat {
+    text-align: center;
+}
+
+.grove-stat__value {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--grove-space-xs);
+}
+
+.grove-stat__label {
+    color: var(--grove-gray-600);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.grove-stat__divider {
+    width: 1px;
+    height: 60px;
+    background: var(--grove-gray-200);
+}
+
+@media (max-width: 768px) {
+    .grove-stat__divider {
+        display: none;
+    }
+}
+
+/* Insights Section */
+.grove-insights {
+    padding: var(--grove-space-2xl) 0;
+}
+
+.grove-insights__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--grove-space-md);
+}
+
+@media (max-width: 768px) {
+    .grove-insights__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonial Section */
+.grove-testimonial {
+    padding: var(--grove-space-2xl) 0;
+    background: var(--grove-gray-50);
+}
+
+.grove-testimonial__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.grove-testimonial__quote {
+    margin-bottom: var(--grove-space-md);
+}
+
+.grove-testimonial__text {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    line-height: 1.5;
+    margin-bottom: var(--grove-space-md);
+    font-weight: 400;
+}
+
+.grove-testimonial__author {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grove-space-xs);
+}
+
+.grove-testimonial__author strong {
+    font-weight: 600;
+}
+
+.grove-testimonial__author span {
+    color: var(--grove-gray-600);
+    font-size: 0.875rem;
+}
+
+/* CTA Section */
+.grove-cta {
+    padding: var(--grove-space-2xl) 0;
+    background: var(--grove-black);
+    color: var(--grove-white);
+}
+
+.grove-cta__content {
+    text-align: center;
+}
+
+.grove-cta__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: var(--grove-line-height-tight);
+    margin-bottom: var(--grove-space-sm);
+    letter-spacing: -0.02em;
+}
+
+.grove-cta__subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--grove-space-lg);
+}
+
+/* Buttons */
+.grove-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--grove-space-xs);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--grove-transition);
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: var(--grove-font-family);
+}
+
+.grove-button--primary {
+    background: var(--grove-white);
+    color: var(--grove-black);
+}
+
+.grove-button--primary:hover {
+    background: var(--grove-gray-100);
+    transform: translateY(-1px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+.grove-button--secondary {
+    background: var(--grove-white);
+    color: var(--grove-black);
+    border-color: var(--grove-gray-300);
+}
+
+.grove-button--secondary:hover {
+    background: var(--grove-gray-50);
+    border-color: var(--grove-gray-400);
+}
+
+.grove-button--large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+/* Partner Card Override for Grove Style */
+.grove-partners .partner-card {
+    background: var(--grove-white);
+    border: 1px solid var(--grove-gray-200);
+    border-radius: 16px;
+    padding: var(--grove-space-md);
+    transition: var(--grove-transition);
+    box-shadow: none;
+}
+
+.grove-partners .partner-card:hover {
+    border-color: var(--grove-gray-300);
+    transform: translateY(-2px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+/* Blog Card Override for Grove Style */
+.grove-insights .blog-card {
+    background: var(--grove-white);
+    border: 1px solid var(--grove-gray-200);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--grove-transition);
+    box-shadow: none;
+}
+
+.grove-insights .blog-card:hover {
+    border-color: var(--grove-gray-300);
+    transform: translateY(-2px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+/* Animations */
+@keyframes grove-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grove-animate {
+    animation: grove-fade-in 0.6s ease-out;
+}
+
+/* Utility Classes */
+.grove-text-center {
+    text-align: center;
+}
+
+.grove-mt-lg {
+    margin-top: var(--grove-space-lg);
+}
+
+.grove-mb-lg {
+    margin-bottom: var(--grove-space-lg);
+}
+
+/* Grove Partner Card */
+.grove-partner-card {
+    background: var(--grove-white);
+    border: 1px solid var(--grove-gray-200);
+    border-radius: 16px;
+    padding: var(--grove-space-md);
+    transition: var(--grove-transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grove-partner-card:hover {
+    border-color: var(--grove-gray-300);
+    transform: translateY(-2px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+.grove-partner-card__header {
+    margin-bottom: var(--grove-space-sm);
+}
+
+.grove-partner-card__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.grove-partner-card__name a {
+    color: var(--grove-gray-900);
+    text-decoration: none;
+    transition: var(--grove-transition);
+}
+
+.grove-partner-card__name a:hover {
+    color: var(--grove-primary);
+}
+
+.grove-partner-card__location {
+    color: var(--grove-gray-500);
+    font-size: 0.875rem;
+}
+
+.grove-partner-card__description {
+    color: var(--grove-gray-600);
+    line-height: 1.5;
+    margin-bottom: var(--grove-space-sm);
+    flex: 1;
+}
+
+.grove-partner-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: var(--grove-space-sm);
+}
+
+.grove-partner-card__tags .od-tag {
+    padding: 0.25rem 0.75rem;
+    background: var(--grove-gray-100);
+    color: var(--grove-gray-700);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.grove-partner-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--grove-space-sm);
+    border-top: 1px solid var(--grove-gray-100);
+}
+
+.grove-partner-card__stats {
+    display: flex;
+    gap: var(--grove-space-md);
+}
+
+.grove-partner-card__stat {
+    font-size: 0.875rem;
+    color: var(--grove-gray-600);
+}
+
+.grove-partner-card__stat strong {
+    color: var(--grove-gray-900);
+    font-weight: 600;
+}
+
+/* Grove Blog Card */
+.grove-blog-card {
+    background: var(--grove-white);
+    border: 1px solid var(--grove-gray-200);
+    border-radius: 16px;
+    padding: var(--grove-space-md);
+    transition: var(--grove-transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grove-blog-card:hover {
+    border-color: var(--grove-gray-300);
+    transform: translateY(-2px);
+    box-shadow: var(--grove-shadow-md);
+}
+
+.grove-blog-card__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grove-blog-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--grove-space-sm);
+}
+
+.grove-blog-card__category {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--grove-primary);
+}
+
+.grove-blog-card__date {
+    font-size: 0.875rem;
+    color: var(--grove-gray-500);
+}
+
+.grove-blog-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--grove-space-sm);
+    line-height: 1.4;
+}
+
+.grove-blog-card__title a {
+    color: var(--grove-gray-900);
+    text-decoration: none;
+    transition: var(--grove-transition);
+}
+
+.grove-blog-card__title a:hover {
+    color: var(--grove-primary);
+}
+
+.grove-blog-card__excerpt {
+    color: var(--grove-gray-600);
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: var(--grove-space-sm);
+}
+
+.grove-blog-card__author {
+    font-size: 0.875rem;
+    color: var(--grove-gray-500);
+}
+
+/* Badge Styles for Grove */
+.od-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.od-badge--enterprise {
+    background: var(--grove-black);
+    color: var(--grove-white);
+}
+
+.od-badge--premium {
+    background: var(--grove-gray-800);
+    color: var(--grove-white);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    :root {
+        --grove-space-2xl: 6rem;
+        --grove-space-xl: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --grove-space-2xl: 4rem;
+        --grove-space-xl: 3rem;
+        --grove-space-lg: 2rem;
+    }
+    
+    .grove-hero__title {
+        font-size: 2rem;
+    }
+    
+    .grove-section-title {
+        font-size: 1.75rem;
+    }
+}

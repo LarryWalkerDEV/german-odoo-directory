@@ -1,0 +1,59 @@
+{
+  "name": "german-odoo-directory",
+  "version": "1.0.0",
+  "description": "German Odoo Directory - B2B SaaS platform for finding Odoo partners in Germany",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node build-scripts/setup.js",
+    "fetch": "node build-scripts/fetch-data.js",
+    "generate": "node build-scripts/generate-pages.js",
+    "generate:blog": "node build-scripts/generate-blog.js",
+    "generate:partners": "node build-scripts/generate-partners.js",
+    "build": "node build-scripts/build.js",
+    "build:quick": "npm run setup && npm run generate",
+    "build:images": "node build-scripts/build-with-images.js",
+    "generate:images": "node build-scripts/generate-article-images.js",
+    "generate:images:secure": "node build-scripts/generate-images-secure.js",
+    "fetch:author-images": "node build-scripts/fetch-author-images.js",
+    "dev": "http-server dist -p 8080 -c-1",
+    "preview": "http-server dist -p 3000",
+    "test": "node build-scripts/test.js",
+    "test:connection": "node build-scripts/test-connection.js",
+    "test:processors": "node build-scripts/test-processors.js",
+    "test:edge-function": "node build-scripts/test-edge-function.js",
+    "validate-links": "node build-scripts/validate-links.js",
+    "check-svg": "node build-scripts/check-svg.js",
+    "generate:images": "node build-scripts/generate-article-images.js",
+    "generate:images:secure": "node build-scripts/generate-images-secure.js",
+    "generate:images:test": "node build-scripts/generate-article-images.js --test",
+    "test:edge-function": "node build-scripts/test-edge-function.js",
+    "build:images": "npm run generate:images:secure && npm run build",
+    "deploy:functions": "supabase functions deploy generate-blog-images"
+  },
+  "keywords": [
+    "odoo",
+    "directory",
+    "german",
+    "b2b",
+    "saas"
+  ],
+  "author": "German Odoo Directory Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "isomorphic-dompurify": "^2.25.0",
+    "node-fetch": "^3.3.2",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "dompurify": "^3.0.6",
+    "http-server": "^14.1.1",
+    "jsdom": "^23.0.1",
+    "marked": "^11.2.0",
+    "minify": "^10.5.2",
+    "serve": "^14.2.1",
+    "sitemap": "^7.1.1"
+  }
+}
